@@ -1,0 +1,104 @@
+@import 'fonts';
+@import 'custom';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+[class*=-dark]:hover {
+    color: $white;
+    background-color: $secondary;
+    border-color: $secondary;
+}
+
+[class*=btn-outline] {
+    border-color: $secondary;
+}
+
+[class*=btn-primary] {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+}
+
+[class*=btn-primary]:hover,
+[class*=btn-primary]:focus,
+[class*=btn-primary]:active {
+    color: $white;
+    background-color: $secondary;
+    border-color: $secondary;
+}
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+// h1, .h1 { font-size: 4rem; line-height: 1.1; }
+// h2, .h2 { font-size: 3.75rem; line-height: 1.1; }
+// h3, .h3 { font-size: 3rem; line-height: 1.1; }
+// h4, .h4 { font-size: 2.25rem; }
+// h5, .h5 { font-size: 1.875rem; }
+// h6, .h6 { font-size: 1.625rem; }
+
+@media (min-width: 1366px) {
+	.container {
+		max-width: 1250px;
+	}
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Aeonik';
+    color: $secondary;
+}
+
+img {
+    max-width: 100%;
+}
+
+*:focus {
+	box-shadow: none !important;
+}
+
+.top {
+	top: 0;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	right: 0;
+}
+
+.bottom {
+	bottom: 0;
+}
+
+
+// oposite margin
+.ms--1 {
+    margin-left: -1rem !important;
+}
+
+@for $i from 1 through 10 {
+    .z-index-#{$i}{
+        z-index: #{$i} !important;
+    }
+}
+@for $i from 6 through 10 {
+    .border-#{$i}{
+        border-width: #{$i}px !important;
+    }
+}
+@for $i from 1 through 10 {
+    .mw-#{$i}{
+        min-width: #{$i}rem !important;
+    }
+}
+.radio-theme{
+   background-color: $light;
+   color: $secondary;
+}
+.page-spacer {
+    padding:4rem 2.5rem;
+}

@@ -1,7 +1,5 @@
 @media (max-width: 991px) {
-
 	.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { padding-left: 1.25rem; padding-right: 1.25rem; }
-
 	h1, .h1 { font-size: 4rem; line-height: 1.1; }
 	h2, .h2 { font-size: 2.25rem; line-height: 1.1; }
 	h3, .h3 { font-size: 2.5rem; line-height: 1.1; }
@@ -102,7 +100,4 @@
 	.footer-link h5:after { content: ""; border-bottom: 2px solid #fff; border-right: 2px solid #fff; width: .75rem; height: .75rem; float: right; transform: rotate( 45deg); margin: .5rem; }
 	.footer-menu { display: none; }
 	.open .footer-menu { display: block; }
-
-
-
 }
