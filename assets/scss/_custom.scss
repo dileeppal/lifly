@@ -16,6 +16,7 @@ $input-padding-y:  .75rem;
 $input-padding-x: 1.75rem;
 $input-padding-x-sm: 1rem;
 
+
 // normal btn
 $btn-padding-x: 2rem;
 
@@ -24,3 +25,14 @@ $accordion-button-padding-y: .75rem;
 $form-check-input-border:  2px solid $secondary;
 $form-check-input-checked-color:          $secondary;
 $accordion-button-active-color:           $secondary;
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.75rem,
+  5: 3rem,
+  6: 2.25rem
+);
+
+$headings-line-height:        1.1;
