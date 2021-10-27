@@ -195,8 +195,6 @@ input[type=number] {
     }
     @include media-breakpoint-down(lg) {
         width: 11rem;
-        height: 12rem;
-        
         .quote-content{
             padding: 1rem;
         }
@@ -208,7 +206,7 @@ input[type=number] {
     }
     cite {
         font-size: .625rem;
-        font-style: normal;
+        font-style: normal; 
     }
 }
 
@@ -694,4 +692,24 @@ input[type=number] {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.range-eggs {
+    .range-eggs-summary {
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: "";
+            @extend .bg-primary-3;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: -60%;
+            left: -50vw;
+            z-index: -1;
+            @include media-breakpoint-down(lg) {
+                bottom: -10rem;
+            }
+        }
+    }
 }
