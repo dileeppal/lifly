@@ -16,14 +16,131 @@
         <header class="site-header" include-html="./components/header.html"></header>
 
         <section>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="filter-col">
                         <div include-html="./components/filter-sidebar.html"></div>
                     </div>
                     <div class="col">
                         <div class="page-spacer">
-                            Producct here
+                            <section class="products">
+                                <div class="row align-items-end product-search mb-4 mb-lg-5">
+                                    <div class="col-lg-7">
+                                        <h2 class="mb-4 mb-lg-0 display-4 fw-bold">
+                                            <a class="me-4" href="#">The Meals</a>
+                                            <a class="text-light" href="#">The Pantry</a>
+                                        </h2>
+                                    </div>
+                                    <div class="col-lg-4 ms-auto">
+                                        <div class="d-flex mb-2">
+                                            <div class="input-group mb-0 col">
+                                                <input type="text" class="form-control rounded-pill z-index-9 bg-light border-0"
+                                                    placeholder="Search Meals" aria-describedby="button-addon1">
+                                                <button class="btn position-absolute top right px-3 z-index-10 bottom" type="button"
+                                                    id="button-addon1">
+                                                    <svg width="26" height="27" class="d-block">
+                                                        <use xlink:href="assets/images/search.svg#search" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tabs-block">
+                                    <div class="scrollbar mb-4">
+                                        <ul class="nav nav-tabs flex-nowrap" id="myTab" role="tablist">
+                                            <li class="nav-item col" role="presentation">
+                                                <button class="nav-link active" id="Featured-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#Featured" type="button" role="tab" aria-controls="Featured"
+                                                    aria-selected="true">Featured</button>
+                                            </li>
+                                            <li class="nav-item col" role="presentation">
+                                                <button class="nav-link" id="Trending-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#Trending" type="button" role="tab" aria-controls="Trending"
+                                                    aria-selected="false">Trending</button>
+                                            </li>
+                                            <li class="nav-item col" role="presentation">
+                                                <button class="nav-link" id="Meals-tab" data-bs-toggle="tab" data-bs-target="#Meals"
+                                                    type="button" role="tab" aria-controls="Meals" aria-selected="false">Meals</button>
+                                            </li>
+                                            <li class="nav-item col" role="presentation">
+                                                <button class="nav-link" id="Vegetarian-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#Vegetarian" type="button" role="tab" aria-controls="Vegetarian"
+                                                    aria-selected="false">Vegetarian</button>
+                                            </li>
+                                            <li class="nav-item col" role="presentation">
+                                                <button class="nav-link" id="Breakfast-tab" data-bs-toggle="tab"
+                                                    data-bs-target="#Breakfast" type="button" role="tab" aria-controls="Breakfast"
+                                                    aria-selected="false">Breakfast</button>
+                                            </li>
+                                            <li class="nav-item col" role="presentation">
+                                                <button class="nav-link" id="Pantry-tab" data-bs-toggle="tab" data-bs-target="#Pantry"
+                                                    type="button" role="tab" aria-controls="Pantry"
+                                                    aria-selected="false">Pantry</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-content" id="myTabContent">
+                
+                                        <div class="tab-pane fade show active" id="Featured" role="tabpanel"
+                                            aria-labelledby="Featured-tab">
+                                            <!-- Need to add product here -->
+                                        </div>
+                                        <div class="tab-pane fade" id="Trending" role="tabpanel" aria-labelledby="Trending-tab">
+                                            <!-- Need to add product here -->
+                                        </div>
+                                        <div class="tab-pane fade" id="Meals" role="tabpanel" aria-labelledby="Meals-tab">
+                                            <!-- Need to add product here -->
+                                        </div>
+                                        <div class="tab-pane fade" id="Vegetarian" role="tabpanel" aria-labelledby="Vegetarian-tab">
+                                            <!-- Need to add product here -->
+                                        </div>
+                                        <div class="tab-pane fade" id="Breakfast" role="tabpanel" aria-labelledby="Breakfast-tab">
+                                            <!-- Need to add product here -->
+                                        </div>
+                                        <div class="tab-pane fade" id="Pantry" role="tabpanel" aria-labelledby="Pantry-tab">
+                                            <!-- Need to add product here -->
+                                        </div>
+                
+                                        <div class="row g-3 product-block scrollbar">
+                                            <div class="col-lg-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="d-flex flex-column p-4 bg-light h-100">
+                                                    <h3>Thanks for supporting 
+                                                        <span class="text-primary">three of our farmers</span> with your last order</h3>
+                                                    <img class="mt-auto mx-auto w-75" width="92" src="assets/images/image15.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                            <div class="col-lg-8">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ads my-4">
+                                            <h2 class="mb-4">Kick Start Program</h2>
+                                            <div class="d-flex bg-danger text-white align-items-center">
+                                                <div class="col-6 px-5 py-4">
+                                                    <h2>Kick Start Program</h2>
+                                                    <p>Sourced locally from Field to Feast Farm, NSW Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                                </div>
+                                                <div class="col-3 ms-auto">
+                                                    <img src="assets/images/image14.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-lg btn-primary rounded-pill mt-4 d-lg-none" type="button"
+                                        id="button-addon1">Order Now</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
