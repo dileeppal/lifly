@@ -8047,7 +8047,7 @@ img {
 .bg-primary-2 {
   background-color: rgba(191, 204, 128, 0.2); }
 
-.bg-primary-3 {
+.bg-primary-3, .range-eggs .range-eggs-summary::before {
   background-color: rgba(191, 204, 128, 0.3); }
 
 .bg-info-1 {
@@ -8246,8 +8246,7 @@ input[type=number] {
     padding: 2rem 1.25rem 1.25rem; }
   @media (max-width: 991.98px) {
     .quote {
-      width: 11rem;
-      height: 12rem; }
+      width: 11rem; }
       .quote .quote-content {
         padding: 1rem; } }
   @media (max-width: 991.98px) {
@@ -8602,3 +8601,18 @@ input[type=number] {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.range-eggs .range-eggs-summary {
+  position: relative;
+  z-index: 1; }
+  .range-eggs .range-eggs-summary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -60%;
+    left: -50vw;
+    z-index: -1; }
+    @media (max-width: 991.98px) {
+      .range-eggs .range-eggs-summary::before {
+        bottom: -10rem; } }
