@@ -150,3 +150,15 @@ img {
         }
     }
 }
+.add-to-wishlist{
+    svg{
+        stroke: $dark;
+        fill: none;
+    }
+    &.added{
+        svg{
+            stroke: none;
+            fill:$danger
+        }
+    }
+}
