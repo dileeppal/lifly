@@ -8037,6 +8037,9 @@ img {
 
 .page-spacer {
   padding: 4rem 2.5rem; }
+  @media (max-width: 991.98px) {
+    .page-spacer {
+      padding: 0; } }
 
 .bg-primary-1 {
   background-color: rgba(191, 204, 128, 0.1); }
@@ -8165,6 +8168,10 @@ input[type=number] {
   border-right-width: 1px;
   border-top-color: #000;
   border-right-color: #000; }
+  @media (max-width: 991.98px) {
+    .dropdown-toggle:after {
+      width: .5rem;
+      height: .5rem; } }
 
 /* Banner */
 .carousel-caption {
@@ -8285,6 +8292,10 @@ input[type=number] {
       padding-top: 5.5rem;
       padding-bottom: 8rem; } }
 
+@media (max-width: 991.98px) {
+  .product-search-link a {
+    font-size: 1.75rem; } }
+
 .tabs-block .nav-tabs {
   border-bottom-width: 2px; }
   @media (max-width: 991.98px) {
@@ -8315,6 +8326,19 @@ input[type=number] {
   visibility: hidden;
   opacity: 0; }
 
+@media (max-width: 991.98px) {
+  .product-card .add-to-cart-row .btn {
+    font-size: .75rem !important; }
+    .product-card .add-to-cart-row .btn svg {
+      width: .625rem;
+      height: .625rem; } }
+
+@media (max-width: 991.98px) {
+  .product-card .card-body {
+    font-size: .75rem; }
+    .product-card .card-body .card-title {
+      font-size: 1rem; } }
+
 .product-card:hover .product-hover, .product-card.added-to-cart .product-hover {
   visibility: visible;
   opacity: 1; }
@@ -8325,9 +8349,17 @@ input[type=number] {
 .product-card.added-to-cart .add-to-cart {
   display: none; }
 
-.product-card .card-thumb .card-img-top {
-  height: 22rem;
-  object-fit: cover; }
+.product-card .add-to-cart {
+  padding: .75rem; }
+  @media (max-width: 991.98px) {
+    .product-card .add-to-cart svg {
+      width: 1rem;
+      height: 1rem; } }
+
+@media (min-width: 992px) {
+  .product-card .card-thumb .card-img-top {
+    height: 28rem;
+    object-fit: cover; } }
 
 .quote-section {
   background-color: #313D3B;
@@ -8523,6 +8555,9 @@ input[type=number] {
   background-color: #F3F3F3;
   position: relative;
   z-index: 1; }
+  @media (max-width: 991.98px) {
+    .filter-col {
+      width: 100%; } }
   .filter-col:before {
     content: "";
     background-color: #F3F3F3;
@@ -8532,6 +8567,9 @@ input[type=number] {
     right: 0;
     left: -50vw;
     z-index: -1; }
+    @media (max-width: 991.98px) {
+      .filter-col:before {
+        right: -50vw; } }
 
 .stretched-link {
   display: none; }
