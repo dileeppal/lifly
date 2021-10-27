@@ -182,16 +182,20 @@ input[type=number] {
     top: 0;
     right: 0;
     width: 14.75rem;
-    height: 19rem;
-    padding: 2rem 1.25rem 1.25rem;
-    background-color: $info;
-    color: $white;
-    border-left: .5rem solid $white;
-    border-bottom: .5rem solid $white;
+    background-color: $white;
+    color: $dark;
+    padding-left: .5rem;
+    padding-bottom: .5rem;
+    .quote-content{
+        padding: 2rem 1.25rem 1.25rem;
+    }
     @include media-breakpoint-down(lg) {
         width: 11rem;
         height: 12rem;
-        padding: 1rem;
+        
+        .quote-content{
+            padding: 1rem;
+        }
     }
     h3 {
         @include media-breakpoint-down(lg) {
@@ -618,4 +622,28 @@ input[type=number] {
 
 .stretched-link {
     display: none;
+}
+.detail-tab{
+    .nav-link{
+        color: #949494;
+        border-color: transparent !important;
+        box-shadow: none;
+        border-radius: 0.25rem;
+        &.active{
+            background-color: #CFCFCF;
+            color: #FFF;
+        }
+    }
+}
+.review-draw{
+    height: 8px;
+}
+.user-circle{
+    width: 1.85rem;
+    height: 1.85rem;
+    background-color: #FFB39B;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

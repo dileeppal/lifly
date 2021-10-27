@@ -2,29 +2,29 @@
 @import 'custom';
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
-[class*=-dark]:hover {
-    color: $white;
-    background-color: $secondary;
-    border-color: $secondary;
-}
+// [class*=-dark]:hover {
+//     color: $white;
+//     background-color: $secondary;
+//     border-color: $secondary;
+// }
 
-[class*=btn-outline] {
-    border-color: $secondary;
-}
+// [class*=btn-outline] {
+//     border-color: $secondary;
+// }
 
-[class*=btn-primary] {
-    color: $white;
-    background-color: $primary;
-    border-color: $primary;
-}
+// [class*=btn-primary] {
+//     color: $white;
+//     background-color: $primary;
+//     border-color: $primary;
+// }
 
-[class*=btn-primary]:hover,
-[class*=btn-primary]:focus,
-[class*=btn-primary]:active {
-    color: $white;
-    background-color: $secondary;
-    border-color: $secondary;
-}
+// [class*=btn-primary]:hover,
+// [class*=btn-primary]:focus,
+// [class*=btn-primary]:active {
+//     color: $white;
+//     background-color: $secondary;
+//     border-color: $secondary;
+// }
 
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { font-weight: bold; }
@@ -60,19 +60,19 @@ img {
 }
 
 .top {
-	top: 0;
+	top: 0 !important;
 }
 
 .left {
-	left: 0;
+	left: 0 !important;
 }
 
 .right {
-	right: 0;
+	right: 0 !important;
 }
 
 .bottom {
-	bottom: 0;
+	bottom: 0 !important;
 }
 
 
@@ -102,4 +102,48 @@ img {
 }
 .page-spacer {
     padding:4rem 2.5rem;
+}
+.bg-primary-1{
+    background-color: rgba($primary, .1);
+}
+
+.bg-primary-2{
+    background-color: rgba($primary, .2);
+}
+
+.bg-primary-3{
+    background-color: rgba($primary, .3);
+}
+
+
+.bg-info-1{
+    background-color: rgba($info, .1);
+}
+.bg-info-2{
+    background-color: rgba($info, .2);
+}
+
+.bg-info-3{
+    background-color: rgba($info, .3);
+}
+.bg-danger-25{
+    background-color: rgba($danger, .25) !important;
+}
+.owl-carousel {
+    padding: 0 1rem;
+    .owl-nav button{
+        &.owl-next, &.owl-prev{
+            width: 3.5rem;
+            height: 3.5rem;
+            border-radius: 100%;
+            box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: calc(50% - 100px);
+            left: 0;background-color: #FFF;
+        }
+        &.owl-next{
+            left: auto !important;
+            right: 0 !important;
+        }
+    }
 }

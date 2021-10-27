@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <title>Lifely - Listing</title>
@@ -16,7 +17,7 @@
         <header class="site-header" include-html="./components/header.html"></header>
 
         <section>
-            <div class="container">
+            <div class="container-xxl" style="max-width:1440px;">
                 <div class="row">
                     <div class="filter-col">
                         <div include-html="./components/filter-sidebar.html"></div>
@@ -149,10 +150,25 @@
 
         <footer class="site-footer" include-html="./components/footer.html"></footer>
     </main>
-
+    <!-- Product Detail Modal -->
+        
+        <div class="modal fadein" id="productDetail" style="display: block;" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                
+                <div class="modal-body">
+                    <div include-html="./components/product-detail.html"></div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+    <!-- End -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/loadComponents.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 

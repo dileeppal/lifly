@@ -20,4 +20,25 @@ jQuery(document).ready(function(){
     jQuery(document).on('click', '.add-to-cart', function(){
         jQuery(this).parents().closest('.product-card').addClass('added-to-cart');
     });
+
+    setTimeout(() => {
+        jQuery('.related-items').owlCarousel({
+            loop:true,
+            margin: 18,
+            nav:true,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+    }, 1000);
+    
 });
+
