@@ -102,4 +102,7 @@ img {
 }
 .page-spacer {
     padding:4rem 2.5rem;
+    @include media-breakpoint-down(lg) {
+        padding: 0;
+    }
 }

@@ -15,24 +15,24 @@
     <main>
         <header class="site-header" include-html="./components/header.html"></header>
 
-        <section>
-            <div class="container">
+        <section class="overflow-hidden">
+            <div class="container" style="max-width: 1470px;">
                 <div class="row">
                     <div class="filter-col">
-                        <div include-html="./components/filter-sidebar.html"></div>
+                        <div class="py-5 py-lg-0" include-html="./components/filter-sidebar.html"></div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg">
                         <div class="page-spacer">
-                            <section class="products">
+                            <section class="products py-5 py-lg-0">
                                 <div class="row align-items-end product-search mb-4 mb-lg-5">
-                                    <div class="col-lg-7">
-                                        <h2 class="mb-4 mb-lg-0 display-4 fw-bold">
-                                            <a class="me-4" href="#">The Meals</a>
+                                    <div class="col-lg-8">
+                                        <h2 class="mb-4 mb-lg-0 display-4 fw-bold product-search-link">
+                                            <a class="me-2 me-lg-4" href="#">The Meals</a>
                                             <a class="text-light" href="#">The Pantry</a>
                                         </h2>
                                     </div>
                                     <div class="col-lg-4 ms-auto">
-                                        <div class="d-flex mb-2">
+                                        <div class="d-flex">
                                             <div class="input-group mb-0 col">
                                                 <input type="text" class="form-control rounded-pill z-index-9 bg-light border-0"
                                                     placeholder="Search Meals" aria-describedby="button-addon1">
@@ -102,43 +102,63 @@
                                             <!-- Need to add product here -->
                                         </div>
                 
-                                        <div class="row g-3 product-block scrollbar">
-                                            <div class="col-lg-4">
+                                        <div class="row g-3 product-block">
+                                            <div class="col-6 col-lg-6 col-xl-4">
                                                 <div class="d-flex flex-column" include-html="./components/product.html"></div>
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-6 col-lg-6 col-xl-4">
                                                 <div class="d-flex flex-column" include-html="./components/product.html"></div>
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-6 col-lg-6 col-xl-4">
                                                 <div class="d-flex flex-column p-4 bg-light h-100">
-                                                    <h3>Thanks for supporting 
+                                                    <h3 class="mb-5">Thanks for supporting 
                                                         <span class="text-primary">three of our farmers</span> with your last order</h3>
-                                                    <img class="mt-auto mx-auto w-75" width="92" src="assets/images/image15.png" alt="">
+                                                    <img class="mt-auto mx-auto w-50" width="92" src="assets/images/image15.png" alt="">
                                                 </div>
                                             </div>
-                                            <div class="col-lg-4">
+                                            <div class="col-6 col-lg-6 col-xl-4">
                                                 <div class="d-flex flex-column" include-html="./components/product.html"></div>
                                             </div>
-                                            <div class="col-lg-8">
+                                            <div class="col-lg-12 col-xl-8">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+
+                                            <div class="col-6 col-lg-6 col-xl-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                            <div class="col-6 col-lg-6 col-xl-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                            <div class="col-6 col-lg-6 col-xl-4">
                                                 <div class="d-flex flex-column" include-html="./components/product.html"></div>
                                             </div>
                                         </div>
 
                                         <div class="ads my-4">
                                             <h2 class="mb-4">Kick Start Program</h2>
-                                            <div class="d-flex bg-danger text-white align-items-center">
-                                                <div class="col-6 px-5 py-4">
+                                            <div class="d-flex flex-wrap bg-danger text-white align-items-center">
+                                                <div class="col-md col-lg-7 col-xl-6 p-4 px-lg-5 py-lg-4">
                                                     <h2>Kick Start Program</h2>
-                                                    <p>Sourced locally from Field to Feast Farm, NSW Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+                                                    <p class="mb-0">Sourced locally from Field to Feast Farm, NSW Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
                                                 </div>
-                                                <div class="col-3 ms-auto">
-                                                    <img src="assets/images/image14.jpg" alt="">
+                                                <div class="col-md col-lg-5 col-xl-3 ms-lg-auto">
+                                                    <img class="w-100" src="assets/images/image14.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="row g-3 product-block">
+                                            <div class="col-6 col-lg-6 col-xl-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                            <div class="col-6 col-lg-6 col-xl-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                            <div class="col-6 col-lg-6 col-xl-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <button class="btn btn-lg btn-primary rounded-pill mt-4 d-lg-none" type="button"
-                                        id="button-addon1">Order Now</button>
                                 </div>
                             </div>
                         </div>

@@ -112,6 +112,10 @@ input[type=number] {
         border-right-width: 1px;
         border-top-color: $black;
         border-right-color: $black;
+        @include media-breakpoint-down(lg) {
+            width: .5rem;
+            height: .5rem;
+        }
     }
 }
 
@@ -268,6 +272,14 @@ input[type=number] {
     }
 }
 
+.product-search-link {
+    a {
+        @include media-breakpoint-down(lg) {
+            font-size: 1.75rem;
+        }
+    }
+}
+
 .tabs-block {
     .nav-tabs {
         border-bottom-width: 2px;
@@ -308,6 +320,25 @@ input[type=number] {
         visibility: hidden;
         opacity: 0;
     }
+    .add-to-cart-row {
+        @include media-breakpoint-down(lg) {
+            .btn {
+                font-size: .75rem !important;
+                svg {
+                    width: .625rem;
+                    height: .625rem;
+                }
+            }
+        }
+    }
+    .card-body {
+        @include media-breakpoint-down(lg) {
+            .card-title {
+                font-size: 1rem;
+            }
+            font-size: .75rem;
+        }
+    }
     &:hover,
     &.added-to-cart {
         .product-hover {
@@ -325,10 +356,21 @@ input[type=number] {
             display: none;
         }
     }
+    .add-to-cart {
+        padding: .75rem;
+        @include media-breakpoint-down(lg) {
+            svg {
+                width: 1rem;
+                height: 1rem;
+            }
+        }
+    }
     .card-thumb {
         .card-img-top {
-            height: 22rem;
-            object-fit: cover;
+            @include media-breakpoint-up(lg) {
+                height: 28rem;
+                object-fit: cover;
+            }
         }
     }
     
@@ -604,6 +646,9 @@ input[type=number] {
     background-color: #F3F3F3;
     position: relative;
     z-index: 1;
+    @include media-breakpoint-down(lg) {
+        width: 100%;
+    }
     &:before {
         content: "";
         background-color: #F3F3F3;
@@ -613,6 +658,9 @@ input[type=number] {
         right: 0;
         left: -50vw;
         z-index: -1;
+        @include media-breakpoint-down(lg) {
+            right: -50vw;
+        }
     }
 }
 
