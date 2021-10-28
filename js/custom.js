@@ -20,6 +20,9 @@ jQuery(document).ready(function(){
     jQuery(document).on('click', '.add-to-cart', function(){
         jQuery(this).parents().closest('.product-card').addClass('added-to-cart');
     });
+    jQuery(document).on('click', '.add-to-wishlist', function(){
+        jQuery(this).toggleClass('added');
+    });
 
     setTimeout(() => {
         jQuery('.related-items').owlCarousel({

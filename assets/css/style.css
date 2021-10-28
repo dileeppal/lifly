@@ -8077,6 +8077,14 @@ img {
     left: auto !important;
     right: 0 !important; }
 
+.add-to-wishlist svg {
+  stroke: #212529;
+  fill: none; }
+
+.add-to-wishlist.added svg {
+  stroke: none;
+  fill: #FFA38B; }
+
 .nav-toggle {
   padding: 0;
   background-color: transparent;
