@@ -1,6 +1,6 @@
 <div class="product-detail p-lg-4">
     <div class="row g-4">
-        <div class="col-lg-7">
+        <div class="col-xl-7">
             <div id="detailSlider" class="carousel slide w-100" data-bs-ride="carousel">
                 <div class="carousel-indicators m-0 left right justify-content-center p-3">
                     <button type="button" data-bs-target="#detailSlider" data-bs-slide-to="0" class="active"
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-5">
+        <div class="col-xl-5">
             <h1 class="display-5 fw-bold mb-3">Chicken White Bean Salad</h1>
             <div class="d-flex justify-content-between">
                 <div class="h5 mb-0">
@@ -80,33 +80,38 @@
                 <p>Lifely connects you with food directly from the producers, sidestepping the supermarkets</p>
             </div>
             <hr />
-            <div class="add-to-cart-row d-flex flex-nowrap mb-4">
-                <div class="dropdown col">
-                    <button class="btn bg-light fw-bold border-0 rounded-0 btn-lg px-3 w-100 dropdown-toggle"
-                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Regular
-                    </button>
-                    <ul class="dropdown-menu rounded-0 border-0 w-100 shadow-lg" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item px-4 py-2" href="#">Regular</a></li>
-                        <li><a class="dropdown-item px-4 py-2" href="#">Large</a></li>
-                        <li><a class="dropdown-item px-4 py-2" href="#">Family Size</a></li>
-                    </ul>
+            <div class="product-options">
+                <div class="add-to-cart-row d-flex mb-4 add-to-cart-detail">
+                    <div class="added-option d-flex">
+                        <div class="dropdown d-flex">
+                            <button class="btn bg-light fw-bold border-0 rounded-0 btn-lg px-4 px-lg-5 w-100 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                Regular
+                            </button>
+                            <ul class="dropdown-menu rounded-0 border-0 w-100 shadow-lg" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item px-4 py-2" href="#">Regular</a></li>
+                              <li><a class="dropdown-item px-4 py-2" href="#">Large</a></li>
+                              <li><a class="dropdown-item px-4 py-2" href="#">Family Size</a></li>
+                            </ul>
+                          </div>
+                          <div class="col d-flex bg-primary qty-counter" id="field1">
+                            <button type="button" id="sub" class="btn px-3 border-0 col sub">
+                                <svg fill="white" width="14" height="2" class="d-block mx-auto">
+                                    <use xlink:href="assets/images/minus.svg#minus" />
+                                </svg>
+                            </button>
+                            <input class="form-control border-0 text-center bg-transparent col px-3 border-0 fw-bold" type="number" id="1" value="1" min="1" max="20" />
+                            <button type="button" id="add" class="btn px-3 border-0 col add">
+                                <svg width="14" height="14" fill="white" class="d-block mx-auto">
+                                    <use xlink:href="assets/images/plus.svg#plus" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn border-0 btn-primary rounded-0 fs-5 px-4 fw-bold add-to-cart">Add to cart</button>
                 </div>
-                <div class="col d-flex bg-white" id="field1">
-                    <button class="btn btn-primary fw-bold btn-lg px-4 rounded-0">Add to cart</button>
-                    <!-- <button type="button" id="sub" class="btn p-0 border-0 col sub">
-                            <svg width="14" height="2" class="d-block mx-auto">
-                                <use xlink:href="assets/images/minus.svg#minus" />
-                            </svg>
-                        </button>
-                        <input class="form-control border-0 text-center col p-0 border-0" type="number" id="1" value="1" min="1" max="20" />
-                        <button type="button" id="add" class="btn p-0 border-0 col add">
-                            <svg width="14" height="14" class="d-block mx-auto">
-                                <use xlink:href="assets/images/plus.svg#plus" />
-                            </svg>
-                        </button> -->
-                </div>
+               
             </div>
+         
 
             <ul class="nav nav-tabs bg-light border-0 mb-3 detail-tab" role="tablist">
                 <li class="nav-item" role="presentation">

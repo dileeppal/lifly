@@ -14,11 +14,11 @@ jQuery(document).ready(function(){
         if (jQuery(this).next().val() > 1) {
             if (jQuery(this).next().val() > 1) jQuery(this).next().val(+jQuery(this).next().val() - 1);
         } else {
-            jQuery(this).parents().closest('.product-card').removeClass('added-to-cart');     
+            jQuery(this).parents().closest('.add-to-cart-row').removeClass('added-to-cart');     
         }
     });
     jQuery(document).on('click', '.add-to-cart', function(){
-        jQuery(this).parents().closest('.product-card').addClass('added-to-cart');
+        jQuery(this).parents().closest('.add-to-cart-row').addClass('added-to-cart');
     });
     jQuery(document).on('click', '.add-to-wishlist', function(){
         jQuery(this).toggleClass('added');

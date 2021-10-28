@@ -311,18 +311,23 @@ input[type=number] {
 // product-card
 
 .product-card {
-    .product-hover {
+    .product-options {
         position: absolute;
         left: 0;
         top: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, .3);
+        transition:  background .25s ease;
+        cursor: pointer;
+    }
+    .added-option,
+    .add-to-cart{
         transition: visibility .25s, opacity .25s ease;
         visibility: hidden;
         opacity: 0;
     }
     .add-to-cart-row {
+        max-width: 25rem;
         @include media-breakpoint-down(lg) {
             .btn {
                 font-size: .75rem !important;
@@ -332,6 +337,20 @@ input[type=number] {
                 }
             }
         }
+        &.added-to-cart {
+            .added-option{
+                visibility: visible;
+                opacity: 1;
+            }
+            .add-to-cart{
+                display: none !important;
+            }
+        }
+        .qty-counter{
+            svg{
+                stroke: $dark;
+            }
+        }
     }
     .card-body {
         @include media-breakpoint-down(lg) {
@@ -339,23 +358,6 @@ input[type=number] {
                 font-size: 1rem;
             }
             font-size: .75rem;
-        }
-    }
-    &:hover,
-    &.added-to-cart {
-        .product-hover {
-            visibility: visible;
-            opacity: 1;
-        }
-    }
-    &:not(.added-to-cart) {
-        .add-to-cart-row {
-            display: none !important;
-        }
-    }
-    &.added-to-cart {
-        .add-to-cart {
-            display: none;
         }
     }
     .add-to-cart {
@@ -375,7 +377,15 @@ input[type=number] {
             }
         }
     }
-    
+    &:hover{
+        .product-options{
+            background-color: rgba(0, 0, 0, .3);
+        }
+        .add-to-cart{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
 }
 
 // Quote section
@@ -712,4 +722,22 @@ input[type=number] {
             }
         }
     }
+}
+.add-to-cart-detail{
+    &:not(.added-to-cart) {
+        .qty-counter{
+            display: none !important;
+        }
+    }
+    &.added-to-cart{
+        .add-to-cart{
+            display: none !important;
+        }
+    }
+    .qty-counter{
+        svg{
+            stroke: $light;
+        }
+    }
+    
 }

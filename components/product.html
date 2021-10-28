@@ -1,37 +1,40 @@
 <div class="card product-card rounded-0 border-0">
     <div class="card-thumb position-relative">
         <img src="assets/images/image17.jpg" class="card-img-top" alt="">
-        <div class="product-hover">
-            <div class="add-to-cart-row d-flex position-absolute bottom left right">
-                <div class="dropdown col">
-                    <button class="btn bg-light fw-bold border-0 rounded-0 btn-lg px-2 px-lg-3 w-100 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Regular
-                    </button>
-                    <ul class="dropdown-menu rounded-0 border-0 w-100 shadow-lg" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item px-4 py-2" href="#">Regular</a></li>
-                      <li><a class="dropdown-item px-4 py-2" href="#">Large</a></li>
-                      <li><a class="dropdown-item px-4 py-2" href="#">Family Size</a></li>
-                    </ul>
-                  </div>
-                  <div class="col d-flex bg-white" id="field1">
-                    <button type="button" id="sub" class="btn p-0 border-0 col sub">
-                        <svg width="14" height="2" class="d-block mx-auto">
-                            <use xlink:href="assets/images/minus.svg#minus" />
-                        </svg>
-                    </button>
-                    <input class="form-control border-0 text-center col p-0 border-0" type="number" id="1" value="1" min="1" max="20" />
-                    <button type="button" id="add" class="btn p-0 border-0 col add">
-                        <svg width="14" height="14" class="d-block mx-auto">
-                            <use xlink:href="assets/images/plus.svg#plus" />
-                        </svg>
-                    </button>
+        <div class="product-options">
+            <div class="add-to-cart-row d-flex position-absolute bottom w-100 right">
+                <div class="added-option col d-flex">
+                    <div class="dropdown col d-flex">
+                        <button class="btn bg-light fw-bold border-0 rounded-0 btn-lg px-2 px-lg-3 w-100 dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Regular
+                        </button>
+                        <ul class="dropdown-menu rounded-0 border-0 w-100 shadow-lg" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item px-4 py-2" href="#">Regular</a></li>
+                          <li><a class="dropdown-item px-4 py-2" href="#">Large</a></li>
+                          <li><a class="dropdown-item px-4 py-2" href="#">Family Size</a></li>
+                        </ul>
+                      </div>
+                      <div class="col d-flex bg-white qty-counter" id="field1">
+                        <button type="button" id="sub" class="btn p-0 border-0 col sub">
+                            <svg width="14" height="2" class="d-block mx-auto">
+                                <use xlink:href="assets/images/minus.svg#minus" />
+                            </svg>
+                        </button>
+                        <input class="form-control border-0 text-center col p-0 border-0 fw-bold" type="number" id="1" value="1" min="1" max="20" />
+                        <button type="button" id="add" class="btn p-0 border-0 col add">
+                            <svg width="14" height="14" class="d-block mx-auto">
+                                <use xlink:href="assets/images/plus.svg#plus" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
+                <button class="btn border-0 col-auto btn-light rounded-0 p-lg-3  bg-white add-to-cart">
+                    <svg width="21" height="21" class="d-block">
+                        <use xlink:href="assets/images/cart.svg#cart" />
+                    </svg>
+                </button>
             </div>
-            <a class="btn btn-light rounded-0 p-lg-3 position-absolute bottom right bg-white add-to-cart" href="#">
-                <svg width="30" height="28" class="d-block">
-                    <use xlink:href="assets/images/cart.svg#cart" />
-                </svg>
-            </a>
+           
         </div>
     </div>
     <div class="card-body px-0">
