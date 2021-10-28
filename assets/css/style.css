@@ -8169,7 +8169,15 @@ a {
   .container-xl,
   .container-xxl {
     padding-left: 1.5rem;
-    padding-right: 1.5rem; } }
+    padding-right: 1.5rem; }
+    .container::-webkit-scrollbar,
+    .container-fluid::-webkit-scrollbar,
+    .container-sm::-webkit-scrollbar,
+    .container-md::-webkit-scrollbar,
+    .container-lg::-webkit-scrollbar,
+    .container-xl::-webkit-scrollbar,
+    .container-xxl::-webkit-scrollbar {
+      display: none; } }
 
 @media (max-width: 991.98px) {
   .scrollbar {
