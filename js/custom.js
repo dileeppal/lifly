@@ -40,8 +40,31 @@ jQuery(document).ready(function(){
                     items:3
                 }
             }
-        })
+        });
+
+        
+        
     }, 1000);
+
+    jQuery('.how-it-work-carousel').owlCarousel({
+        loop:false,
+        margin: 18,
+        nav:false,
+        mouseDrag: false,
+        responsive:{
+            0:{
+                stagePadding: 40,
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
     
 });
 

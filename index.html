@@ -5,6 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
     <title>Lifely</title>
@@ -125,46 +126,41 @@
         </section>
 
         <section class="how-it-work">
-            <div class="container">
+            <div class="container px-0 px-lg-3">
                 <h2 class="text-center section-title display-4 fw-bold mb-4 mb-lg-5">How it Works</h2>
-                <div class="row g-3 scrollbar">
-                    <div class="col-11 col-lg-4">
-                        <div class="card card-work text-center rounded-0 border-0">
-                            <div class="card-thumb bg-cover" style="background-image: url(assets/images/image06.jpg);">
-                                <img src="assets/images/placeholder/placeholder52x60.png" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title"><a href="#">Choose your menu</a></h3>
-                                <p class="card-text mx-auto mb-0 text-muted px-lg-5">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, </p>
-                            </div>
+                <div class="owl-carousel how-it-work-carousel px-0">
+                    <div class="card card-work text-center rounded-0 border-0">
+                        <div class="card-thumb bg-cover" style="background-image: url(assets/images/image06.jpg);">
+                            <img src="assets/images/placeholder/placeholder52x60.png" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Choose your menu</a></h3>
+                            <p class="card-text mx-auto mb-0 text-muted px-lg-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, </p>
                         </div>
                     </div>
-                    <div class="col-11 col-lg-4">
-                        <div class="card card-work text-center rounded-0 border-0">
-                            <div class="card-thumb bg-cover" style="background-image: url(assets/images/image07.jpg);">
-                                <img src="assets/images/placeholder/placeholder52x60.png" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title"><a href="#">Schedule your meals</a></h3>
-                                <p class="card-text mx-auto mb-0 text-muted px-lg-5">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, </p>
-                            </div>
+                    <div class="card card-work text-center rounded-0 border-0">
+                        <div class="card-thumb bg-cover" style="background-image: url(assets/images/image07.jpg);">
+                            <img src="assets/images/placeholder/placeholder52x60.png" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Schedule your meals</a></h3>
+                            <p class="card-text mx-auto mb-0 text-muted px-lg-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, </p>
                         </div>
                     </div>
-                    <div class="col-11 col-lg-4">
-                        <div class="card card-work text-center rounded-0 border-0">
-                            <div class="card-thumb bg-cover" style="background-image: url(assets/images/image08.jpg);">
-                                <img src="assets/images/placeholder/placeholder52x60.png" class="card-img-top" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title"><a href="#">Get Weekly Deliveries</a></h3>
-                                <p class="card-text mx-auto mb-0 text-muted px-lg-5">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, </p>
-                            </div>
+                    <div class="card card-work text-center rounded-0 border-0">
+                        <div class="card-thumb bg-cover" style="background-image: url(assets/images/image08.jpg);">
+                            <img src="assets/images/placeholder/placeholder52x60.png" class="card-img-top" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title"><a href="#">Get Weekly Deliveries</a></h3>
+                            <p class="card-text mx-auto mb-0 text-muted px-lg-5">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, </p>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </section>
 
@@ -263,20 +259,19 @@
                             <!-- Need to add product here -->
                         </div>
 
-                        <div class="row g-3 product-block scrollbar">
-                            <div class="col-11 col-lg-4">
+                        <div class="row g-3 product-block">
+                            <div class="col-6 col-lg-4">
                                 <div include-html="./components/product.html"></div>
                             </div>
-                            <div class="col-11 col-lg-4">
+                            <div class="col-6 col-lg-4">
                                 <div include-html="./components/product.html"></div>
                             </div>
-                            <div class="col-11 col-lg-4">
+                            <div class="col-6 col-lg-4">
                                 <div include-html="./components/product.html"></div>
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-lg btn-primary rounded-pill mt-4 d-lg-none" type="button"
-                        id="button-addon1">Order Now</button>
+                    <button class="btn btn-lg btn-primary rounded-pill mt-4 d-lg-none" type="button" id="button-addon1">Order Now</button>
                 </div>
             </div>
         </section>
@@ -342,7 +337,7 @@
         <section class="blog-section">
             <div class="container">
                 <h2 class="text-center section-title display-4 fw-bold mb-4 mb-lg-5">The Lifely Edit</h2>
-                <div class="row g-4 flex-nowrap flex-lg-wrap scrollbar">
+                <div class="row g-4">
                     <div class="col-lg d-flex">
                         <div class="blog-post">
                             <img class="blog-post-img" src="assets/images/image12.jpg" alt="">
@@ -355,7 +350,7 @@
                         </div>
                     </div>
                     <div class="col-lg d-flex">
-                        <div class="row g-4 flex-nowrap flex-lg-wrap">
+                        <div class="row g-4 ">
                             <div class="col-12 d-flex d-lg-block">
                                 <div class="blog-post blog-post-half">
                                     <img class="blog-post-img" src="assets/images/image13.jpg" alt="">
@@ -406,6 +401,7 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/loadComponents.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 

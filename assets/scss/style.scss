@@ -161,7 +161,7 @@ input[type=number] {
 }
 .featured-post {
     @include media-breakpoint-down(lg) {
-        min-width: 9.125rem;
+        // min-width: 9.125rem;
     }
     .featured-post-title {
         @include media-breakpoint-down(lg) {
@@ -676,9 +676,7 @@ input[type=number] {
     }
 }
 
-.stretched-link {
-    display: none;
-}
+
 .detail-tab{
     .nav-link{
         color: #949494;

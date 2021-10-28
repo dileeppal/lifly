@@ -141,6 +141,12 @@ img {
             position: absolute;
             top: calc(50% - 100px);
             left: 0;background-color: #FFF;
+            span {
+                font-size: 1.5rem;
+                display: block;
+                transform: scaleX(1.75) translateY(-3px);
+                font-weight: 300; 
+            }
         }
         &.owl-next{
             left: auto !important;

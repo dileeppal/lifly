@@ -120,8 +120,8 @@
                                             <div class="col-6 col-lg-6 col-xl-4">
                                                 <div class="d-flex flex-column" include-html="./components/product.html"></div>
                                             </div>
-                                            <div class="col-6 col-lg-6 col-xl-8">
-                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            <div class="col-12 col-lg-6 col-xl-8">
+                                                <div class="d-flex flex-column" include-html="./components/product-quote.html"></div>
                                             </div>
 
                                             <div class="col-6 col-lg-6 col-xl-4">
@@ -172,6 +172,17 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row g-3 product-block">
+                                            <div class="col-6 col-lg-6 col-xl-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                            <div class="col-6 col-lg-6 col-xl-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                            <div class="col-6 col-lg-6 col-xl-4">
+                                                <div class="d-flex flex-column" include-html="./components/product.html"></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -185,17 +196,18 @@
     </main>
     <!-- Product Detail Modal -->
         
-        <div class="modal fade" id="productDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-              <div class="modal-content">
-                
-                <div class="modal-body overflow-hidden">
-                    <div include-html="./components/product-detail.html"></div>
-                </div>
-                
-              </div>
+    <div class="modal fade" id="productDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+            <button type="button" class="btn-close position-absolute right top p-3 z-index-10" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="modal-body overflow-hidden">
+                <div include-html="./components/product-detail.html"></div>
             </div>
-          </div>
+            
+            </div>
+        </div>
+    </div>
           
     <!-- End -->
     <script src="js/jquery-3.6.0.min.js"></script>

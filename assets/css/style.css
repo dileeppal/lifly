@@ -8083,6 +8083,11 @@ img {
     top: calc(50% - 100px);
     left: 0;
     background-color: #FFF; }
+    .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
+      font-size: 1.5rem;
+      display: block;
+      transform: scaleX(1.75) translateY(-3px);
+      font-weight: 300; }
   .owl-carousel .owl-nav button.owl-next {
     left: auto !important;
     right: 0 !important; }
@@ -8229,10 +8234,6 @@ input[type=number] {
       margin-right: 0;
       margin-bottom: 2rem;
       justify-content: flex-start; } }
-
-@media (max-width: 991.98px) {
-  .featured-post {
-    min-width: 9.125rem; } }
 
 @media (max-width: 991.98px) {
   .featured-post .featured-post-title {
@@ -8602,9 +8603,6 @@ input[type=number] {
     @media (max-width: 991.98px) {
       .filter-col:before {
         right: -50vw; } }
-
-.stretched-link {
-  display: none; }
 
 .detail-tab .nav-link {
   color: #949494;
