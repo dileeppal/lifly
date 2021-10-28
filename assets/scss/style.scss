@@ -280,8 +280,8 @@ input[type=number] {
 .product-search-link {
     a {
         @include media-breakpoint-down(lg) {
-            font-size: 1.75rem;
-        }
+            font-size: 1.625rem;
+        } 
     }
 }
 
