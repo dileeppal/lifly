@@ -333,11 +333,7 @@ input[type=number] {
         max-width: 25rem;
         @include media-breakpoint-down(lg) {
             .btn {
-                font-size: .75rem !important;
-                svg {
-                    width: .625rem;
-                    height: .625rem;
-                }
+                font-size: .75rem !important;            
             }
         }
         &.added-to-cart {

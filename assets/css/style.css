@@ -8365,10 +8365,7 @@ input[type=number] {
   max-width: 25rem; }
   @media (max-width: 991.98px) {
     .product-card .add-to-cart-row .btn {
-      font-size: .75rem !important; }
-      .product-card .add-to-cart-row .btn svg {
-        width: .625rem;
-        height: .625rem; } }
+      font-size: .75rem !important; } }
   .product-card .add-to-cart-row.added-to-cart .added-option {
     visibility: visible;
     opacity: 1; }
