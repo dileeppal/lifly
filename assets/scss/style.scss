@@ -712,4 +712,13 @@ input[type=number] {
             }
         }
     }
-} 
+}
+
+.form-check-input {
+    background-color: transparent;
+    &:checked {
+        background-color: transparent;
+        border-color: #212529;
+        background-size: 1rem;
+    }
+}

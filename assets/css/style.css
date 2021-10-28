@@ -8616,3 +8616,10 @@ input[type=number] {
     @media (max-width: 991.98px) {
       .range-eggs .range-eggs-summary::before {
         bottom: -10rem; } }
+
+.form-check-input {
+  background-color: transparent; }
+  .form-check-input:checked {
+    background-color: transparent;
+    border-color: #212529;
+    background-size: 1rem; }
