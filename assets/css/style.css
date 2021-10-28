@@ -8650,3 +8650,10 @@ input[type=number] {
 
 .add-to-cart-detail .qty-counter svg {
   stroke: #F3F3F3; }
+
+.form-check-input {
+  background-color: transparent; }
+  .form-check-input:checked {
+    background-color: transparent;
+    border-color: #212529;
+    background-size: 1rem; }
