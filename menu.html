@@ -19,7 +19,7 @@
         <section class="overflow-hidden">
             <div class="container" style="max-width: 1470px;">
                 <div class="row">
-                    <div class="filter-col">
+                    <div class="filter-col d-none d-lg-block">
                         <div class="py-5 py-lg-0" include-html="./components/filter-sidebar.html"></div>
                     </div>
                     <div class="col-lg">
@@ -27,9 +27,15 @@
                             <section class="products py-5 py-lg-0">
                                 <div class="row align-items-end product-search mb-4 mb-lg-5">
                                     <div class="col-lg-8">
-                                        <h2 class="mb-4 mb-lg-0 display-4 fw-bold product-search-link">
-                                            <a class="me-2 me-lg-4" href="#">The Meals</a>
+                                        <h2 class="mb-4 d-flex align-items-center mb-lg-0 display-5 fw-bold product-search-link">
+                                            <a class="me-auto me-lg-4" href="#">The Meals</a>
                                             <a class="text-light" href="#">The Pantry</a>
+
+                                            <button type="button" class="filter-btn btn p-2 ms-auto d-lg-none" data-bs-toggle="modal" data-bs-target="#filterModal">
+                                                <svg width="20" height="20" class="d-block">
+                                                    <use xlink:href="assets/images/filter.svg#filter" />
+                                                </svg>
+                                            </button>
                                         </h2>
                                     </div>
                                     <div class="col-lg-4 ms-auto">
@@ -197,6 +203,19 @@
     <!-- Menu Detail Modal -->
         
     <div class="modal fade" id="productDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+            <button type="button" class="btn-close position-absolute right top p-3 z-index-10" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <div class="modal-body overflow-hidden">
+                <div include-html="./components/product-detail.html"></div>
+            </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
             <button type="button" class="btn-close position-absolute right top p-3 z-index-10" data-bs-dismiss="modal" aria-label="Close"></button>
