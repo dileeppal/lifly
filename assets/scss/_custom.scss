@@ -17,14 +17,18 @@ $input-padding-x: 1.75rem;
 $input-padding-x-sm: 1rem;
 
 
-// normal btn
+
 $btn-padding-x: 2rem;
 
-// accordion btn
+
 $accordion-button-padding-y: .75rem;
 $form-check-input-border:  2px solid $secondary;
 $form-check-input-checked-color:          $secondary;
 $accordion-button-active-color:           $secondary;
+
+$input-bg: $light;
+$input-border-color: $light;
+$input-focus-border-color: $secondary;
 
 $display-font-sizes: (
   1: 5rem,

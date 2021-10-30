@@ -73,6 +73,24 @@ img {
 	bottom: 0 !important;
 }
 
+.btn-gmail{
+    background-color: #5087EE;
+    color: $white;
+    &:hover, &:focus{
+        background-color: darken(#5087EE, 5%);
+        color: #FFF;
+    }
+}
+
+.btn-facebook{
+    background-color: #516AB4;
+    color: $white;
+    &:hover, &:focus{
+        background-color: darken(#516AB4, 5%);
+        color: #FFF;
+    }
+}
+
 
 // oposite margin
 .ms--1 {
@@ -171,4 +189,7 @@ img {
 .btn-primary:active, .btn-primary.active, 
 .show > .btn-primary.dropdown-toggle{
     color: #FFF;
+}
+.cursor-pointer{
+    cursor: pointer;
 }

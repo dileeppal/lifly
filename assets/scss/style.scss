@@ -295,7 +295,6 @@ input[type=number] {
         }
         .nav-link {
             color: $gray;
-            font-size: 1.125rem;
             border: none;
             padding: .5rem 0;
             font-weight: normal;
@@ -744,5 +743,28 @@ input[type=number] {
         background-color: transparent;
         border-color: #212529;
         background-size: 1rem;
+    }
+}
+
+
+// Auth page css
+.auth-tab{
+
+}
+.btn-svg-primary{
+    svg {
+        stroke: $primary;
+        fill:$primary;
+    }
+    &:hover{
+        svg{
+            stroke: $white;
+        }
+    }
+}
+.sign-option-btn{
+    color: $dark;
+    &:hover{
+        color: $white !important;
     }
 }

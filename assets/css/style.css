@@ -1648,9 +1648,9 @@ progress {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #F3F3F3;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #F3F3F3;
   appearance: none;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -1663,8 +1663,8 @@ progress {
       cursor: pointer; }
   .form-control:focus {
     color: #212529;
-    background-color: #fff;
-    border-color: #dfe6c0;
+    background-color: #F3F3F3;
+    border-color: #313D3B;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(191, 204, 128, 0.25); }
   .form-control::-webkit-date-and-time-value {
@@ -1785,12 +1785,12 @@ textarea.form-control-lg {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: #fff;
+  background-color: #F3F3F3;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 1.75rem center;
   background-size: 16px 12px;
-  border: 1px solid #ced4da;
+  border: 1px solid #F3F3F3;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   appearance: none; }
@@ -1798,7 +1798,7 @@ textarea.form-control-lg {
     .form-select {
       transition: none; } }
   .form-select:focus {
-    border-color: #dfe6c0;
+    border-color: #313D3B;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(191, 204, 128, 0.25); }
   .form-select[multiple], .form-select[size]:not([size="1"]) {
@@ -1838,7 +1838,7 @@ textarea.form-control-lg {
   height: 1em;
   margin-top: 0.25em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: #F3F3F3;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1852,7 +1852,7 @@ textarea.form-control-lg {
   .form-check-input:active {
     filter: brightness(90%); }
   .form-check-input:focus {
-    border-color: #dfe6c0;
+    border-color: #313D3B;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(191, 204, 128, 0.25); }
   .form-check-input:checked {
@@ -1886,7 +1886,7 @@ textarea.form-control-lg {
       .form-switch .form-check-input {
         transition: none; } }
     .form-switch .form-check-input:focus {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23dfe6c0'/%3e%3c/svg%3e"); }
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23313D3B'/%3e%3c/svg%3e"); }
     .form-switch .form-check-input:checked {
       background-position: right center;
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); }
@@ -2041,7 +2041,7 @@ textarea.form-control-lg {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  border: 1px solid #F3F3F3;
   border-radius: 0.25rem; }
 
 .input-group-lg > .form-control,
@@ -3657,7 +3657,7 @@ textarea.form-control-lg {
     z-index: 2; }
   .accordion-button:focus {
     z-index: 3;
-    border-color: #dfe6c0;
+    border-color: #313D3B;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(191, 204, 128, 0.25); }
 
@@ -7963,6 +7963,20 @@ img {
 .bottom {
   bottom: 0 !important; }
 
+.btn-gmail {
+  background-color: #5087EE;
+  color: #fff; }
+  .btn-gmail:hover, .btn-gmail:focus {
+    background-color: #3977ec;
+    color: #FFF; }
+
+.btn-facebook {
+  background-color: #516AB4;
+  color: #fff; }
+  .btn-facebook:hover, .btn-facebook:focus {
+    background-color: #475fa5;
+    color: #FFF; }
+
 .ms--1 {
   margin-left: -1rem !important; }
 
@@ -8104,6 +8118,9 @@ img {
 .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active,
 .show > .btn-primary.dropdown-toggle {
   color: #FFF; }
+
+.cursor-pointer {
+  cursor: pointer; }
 
 .nav-toggle {
   padding: 0;
@@ -8334,7 +8351,6 @@ input[type=number] {
       margin-right: 3rem; } }
   .tabs-block .nav-tabs .nav-link {
     color: #9C9C9C;
-    font-size: 1.125rem;
     border: none;
     padding: .5rem 0;
     font-weight: normal;
@@ -8660,3 +8676,15 @@ input[type=number] {
     background-color: transparent;
     border-color: #212529;
     background-size: 1rem; }
+
+.btn-svg-primary svg {
+  stroke: #BFCC80;
+  fill: #BFCC80; }
+
+.btn-svg-primary:hover svg {
+  stroke: #fff; }
+
+.sign-option-btn {
+  color: #212529; }
+  .sign-option-btn:hover {
+    color: #fff !important; }
