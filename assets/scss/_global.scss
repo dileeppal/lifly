@@ -172,3 +172,9 @@ img {
 .show > .btn-primary.dropdown-toggle{
     color: #FFF;
 }
+
+.btn {
+    svg {
+        vertical-align: sub;
+    }
+}
