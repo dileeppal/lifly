@@ -748,9 +748,6 @@ input[type=number] {
 
 
 // Auth page css
-.auth-tab{
-
-}
 .btn-svg-primary{
     svg {
         stroke: $primary;
@@ -766,5 +763,100 @@ input[type=number] {
     color: $dark;
     &:hover{
         color: $white !important;
+    }
+}
+.form-switch {
+    .form-check-input {
+        border: none;
+        background-color: #DCDCDC;
+        width: 2.875rem;
+        height: 1.5rem;
+        background-size: 1.475rem;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+        &:focus {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+        }
+        &:checked {
+            background-color: #BFCC80;
+        }
+        @include media-breakpoint-down(lg) {
+            transform: scale(.8);
+        }
+    } 
+}
+
+
+
+.checkout-modal { 
+    width: 100%;
+    max-width: 590px;
+    background-color: #fff;
+}
+
+.tab-inner {
+    max-height: calc(100vh - 76px);
+    overflow-y: auto;
+}
+
+.order-qty-counter {
+    .btn {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+    .form-control {
+        width: 1.25rem;
+    }
+}
+
+.similar-products {
+    .product-card {
+        .card-title {
+            font-size: 1rem;
+        }
+        .card-thumb {
+            .card-img-top {
+                height: auto;
+            }
+        }
+        .food-purity {
+            display: none !important;
+        }
+        
+    }
+    .owl-carousel {
+        .owl-nav {
+            button {
+                &.owl-prev,
+                &.owl-next {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+                
+            }
+        }
+    }
+}
+
+.table {
+    tfoot {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+.order-item {
+    .dropdown {
+        .btn {
+            font-size: .875rem;
+        }
+        
+    }
+    
+}
+.checkbox-buttons {
+    .btn-lg {
+        @include media-breakpoint-down(lg) {
+            font-size: .875rem !important;
+        }
     }
 }
