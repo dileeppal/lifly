@@ -8721,7 +8721,8 @@ input[type=number] {
   height: 1.125rem; }
 
 .order-qty-counter .form-control {
-  width: 1.25rem; }
+  width: 1.25rem;
+  background-color: transparent; }
 
 .similar-products .product-card .card-title {
   font-size: 1rem; }
