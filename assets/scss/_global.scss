@@ -207,6 +207,14 @@ img {
 .object-cover {
     object-fit: cover;
 }
+.form-check-input {
+    background-color: transparent;
+    &:checked {
+        background-color: transparent;
+        border-color: #212529;
+        background-size: 1rem;
+    }
+}
 
 .form-switch {
     .form-check-input {
