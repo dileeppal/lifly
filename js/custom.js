@@ -74,4 +74,3 @@ function siteNavigate (hideElement, showElement){
         document.getElementById(showElement).style.display = "block";
     }
 }
-
