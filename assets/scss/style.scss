@@ -886,8 +886,10 @@ input[type=number] {
     }
 }
 
-.tabs-block {
-    height: 100vh;
+.checkout-modal {
+    .tabs-block {
+        height: 100vh;
+    }
 }
 
 .pay-option {
