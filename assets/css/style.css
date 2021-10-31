@@ -8366,6 +8366,9 @@ input[type=number] {
       padding-top: 5.5rem;
       padding-bottom: 8rem; } }
 
+.product-search-link a:not(.active) {
+  color: #CFCFCF; }
+
 @media (max-width: 991.98px) {
   .product-search-link a {
     font-size: 1.625rem; } }
@@ -8720,10 +8723,6 @@ input[type=number] {
   max-width: 590px;
   background-color: #fff; }
 
-.tab-inner {
-  max-height: calc(100vh - 76px);
-  overflow-y: auto; }
-
 .order-qty-counter .btn {
   width: 1.125rem;
   height: 1.125rem; }
@@ -8759,3 +8758,28 @@ input[type=number] {
 .auth-page {
   max-width: 500px;
   width: 100%; }
+
+.order-bar-height {
+  height: 94px; }
+
+.order-bar {
+  max-height: 100vh;
+  overflow-y: auto; }
+  .order-bar .order-bar-inner {
+    cursor: pointer; }
+    .order-bar .order-bar-inner:before {
+      content: "";
+      border-left: 1px solid;
+      border-top: 1px solid;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 2.25rem;
+      left: 1.5rem; }
+
+.tabs-block {
+  height: 100vh; }
+
+.pay-option input:checked + label {
+  box-shadow: 0 0 0 1px #000; }
