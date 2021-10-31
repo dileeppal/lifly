@@ -8087,7 +8087,7 @@ img {
   background-color: rgba(255, 163, 139, 0.25) !important; }
 
 .owl-carousel {
-  padding: 0 1rem; }
+  padding: 0 0rem; }
   .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
     width: 3.5rem;
     height: 3.5rem;
@@ -8095,7 +8095,7 @@ img {
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
     position: absolute;
     top: calc(50% - 100px);
-    left: 0;
+    left: -1rem;
     background-color: #FFF; }
     .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
       font-size: 1.5rem;
@@ -8104,7 +8104,7 @@ img {
       font-weight: 300; }
   .owl-carousel .owl-nav button.owl-next {
     left: auto !important;
-    right: 0 !important; }
+    right: -1rem !important; }
 
 .add-to-wishlist svg {
   stroke: #212529;
@@ -8154,6 +8154,19 @@ img {
   @media (max-width: 991.98px) {
     .form-switch .form-check-input {
       transform: scale(0.8); } }
+
+.modal.custom-modal .modal-dialog {
+  margin: 0 0 0 auto; }
+
+.modal.custom-modal .modal-content {
+  height: 100vh;
+  border-radius: 1rem 0rem 0rem 1rem;
+  border: none;
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+.modal.custom-modal:not(.show).fade .modal-dialog {
+  transform: translate(25%, 0); }
 
 .nav-toggle {
   padding: 0;
@@ -8721,11 +8734,6 @@ input[type=number] {
   .sign-option-btn:hover {
     color: #fff !important; }
 
-.checkout-modal {
-  width: 100%;
-  max-width: 590px;
-  background-color: #fff; }
-
 .order-qty-counter .btn {
   width: 1.125rem;
   height: 1.125rem; }
@@ -8781,9 +8789,6 @@ input[type=number] {
       transform: rotate(45deg);
       top: 2.25rem;
       left: 1.5rem; }
-
-.checkout-modal .tabs-block {
-  height: 100vh; }
 
 .pay-option input:checked + label {
   box-shadow: 0 0 0 1px #000; }

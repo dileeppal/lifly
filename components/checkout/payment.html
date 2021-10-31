@@ -1,0 +1,141 @@
+<div class="tab-inner px-4 px-lg-5 py-4">
+    <h4>Review Details</h4>
+    <hr />
+    <div class="review-details mb-5">
+        <div class="d-flex justify-content-between">
+            <div class="fw-bold">
+                Contact
+            </div>
+            <div class="col px-4">
+                <p class="text-muted">
+                    Sarah Smith <br />
+                    Name@gmail.com <br />
+                    0433123543
+                </p>
+            </div>
+            <div class="edit">
+                <a class="text-primary" href="#">Edit</a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div class="fw-bold">
+                Address
+            </div>
+            <div class="col px-4">
+                <p class="text-muted">3 Address Cres, SUBURB NSW 2300, Australia</p>
+            </div>
+            <div class="edit">
+                <a class="text-primary" href="#">Edit</a>
+            </div>
+        </div>
+    </div>
+
+    <h4>Payment</h4>
+    <hr />
+    <div class="payment-detail mb-5">
+
+        <div class="row pay-option">
+            <div class="col">
+                <input type="radio" class="btn-check" name="payment" id="btncheck1" autocomplete="off" checked>
+                <label class="" for="btncheck1">
+                    <img src="assets/images/paypal.png" alt="" />
+                </label>
+            </div>
+            <div class="col">
+                <input type="radio" class="btn-check" name="payment" id="btncheck2" autocomplete="off">
+                <label class="" for="btncheck2">
+                    <img src="assets/images/afterpay.png" alt="" />
+                </label>
+            </div>
+            <div class="col">
+
+                <input type="radio" class="btn-check" name="payment" id="btncheck3" autocomplete="off">
+                <label class="" for="btncheck3">
+                    <img src="assets/images/visa.png" alt="" />
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-detail mb-5">
+        <div class="form-group mb-4">
+            <label class="form-label fw-bold">Name</label>
+            <input type="text" class="form-control" placeholder="Name" />
+        </div>
+
+        <div class="form-group mb-4">
+            <label class="form-label fw-bold">Card Number</label>
+            <input type="text" class="form-control" placeholder="Name" />
+        </div>
+
+        <div class="form-group mb-4">
+            <label class="form-label fw-bold">Expiration Date</label>
+            <input type="date" class="form-control" placeholder="Date" />
+        </div>
+
+        <div class="form-group mb-4">
+            <label class="form-label fw-bold">CVC</label>
+            <input type="text" class="form-control" placeholder="CVC" />
+        </div>
+    </div>
+
+    <h4>Billing Address</h4>
+    <hr />
+
+    <div class="mb-5">
+        <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="address" id="DeliveryAddress" checked>
+            <label class="form-check-label" for="DeliveryAddress">
+                Same as delivery address
+            </label>
+        </div>
+
+        <div class="form-check my-2">
+            <input class="form-check-input" type="radio" name="address" id="BillingAddress">
+            <label class="form-check-label" for="BillingAddress">
+                Use different billing address
+            </label>
+        </div>
+
+        <div class="card-detail mb-5" style="display: none;">
+            <div class="form-group mb-4">
+                <label class="form-label fw-bold">Name</label>
+                <div class="row g-2">
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Name" />
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Last Name" />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mb-4">
+                <label class="form-label fw-bold">Address</label>
+                <div class="row g-2">
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Address" />
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="form-control" placeholder="Suburb" />
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="State" />
+                    </div>
+                    <div class="col-6">
+                        <input type="text" class="form-control" placeholder="Postcode" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="d-flex justify-content-between">
+            <button class="btn btn-lg btn-default py-2 px-0 fw-bold text-muted">Back</button>
+            <button class="btn btn-lg py-2 px-5 btn-primary fw-bold rounded-pill">Pay
+                Now</button>
+        </div>
+    </div>
+
+</div>

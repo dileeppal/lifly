@@ -766,13 +766,6 @@ input[type=number] {
     }
 }
 
-
-.checkout-modal { 
-    width: 100%;
-    max-width: 590px;
-    background-color: #fff;
-}
-
 .order-qty-counter {
     .btn {
         width: 1.125rem;
@@ -863,13 +856,6 @@ input[type=number] {
         }
     }
 }
-
-.checkout-modal {
-    .tabs-block {
-        height: 100vh;
-    }
-}
-
 .pay-option {
     input:checked + label {
         box-shadow: 0 0 0 1px #000;

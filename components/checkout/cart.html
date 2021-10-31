@@ -11,21 +11,30 @@
             <div class="col">Repeat</div>
         </div>
         <div class="order-listing">
-            <h5 class="text-primary mb-4">Mon 9th October </h5>
-            <div include-html="./components/checkout/order-item.html"></div>
-            <div include-html="./components/checkout/order-item.html"></div>
-
-            <h5 class="text-primary mb-4 mt-5">Wed 11th October</h5>
-            <div include-html="./components/checkout/order-item.html"></div>
-            <h5 class="text-primary mb-4 mt-5">Fri 13th October</h5>
-            <div include-html="./components/checkout/order-item.html"></div>
+            <div class="cart-item-group mb-lg-5 mb-4">
+                <h5 class="text-primary">Mon 9th October </h5>
+                <!-- Load Item -->
+                <div include-html="./components/checkout/order-item.html"></div>
+                <div include-html="./components/checkout/order-item.html"></div>
+            </div>
+            <div class="cart-item-group mb-lg-5 mb-4">
+                <h5 class="text-primary">Wed 11th October</h5>
+                <!-- Load Item -->
+                <div include-html="./components/checkout/order-item.html"></div>
+            </div>
+            <div class="cart-item-group mb-lg-5 mb-4">
+                <h5 class="text-primary">Fri 13th October</h5>
+                <!-- Load Item -->
+                <div include-html="./components/checkout/order-item.html"></div>
+            </div>
         </div>
     </div>
+    <!-- Related Products -->
     <div include-html="./components/related-products.html"></div>
-
+    <!-- End -->
     <div>
         <table class="table table-borderless">
-            
+
             <tbody>
                 <tr>
                     <td class="px-0">Subtotal</td>
@@ -37,19 +46,19 @@
                 </tr>
             </tbody>
             <tfoot class="border-top">
-              <tr>
-                  <td class="px-0">Total</td>
-                  <td class="px-0 text-end">$57.97</td>
-              </tr>
+                <tr>
+                    <td class="px-0">Total</td>
+                    <td class="px-0 text-end">$57.97</td>
+                </tr>
             </tfoot>
-          </table>
+        </table>
     </div>
-    <div class="d-flex checkbox-buttons">
+    <div class="d-flex checkbox-buttons mb-2">
         <button type="button" class="btn btn-dark btn-lg rounded-pill fw-bold col px-3">
-            <svg width="20" height="20" fill="white">
+            <svg class="align-text-bottom" width="20" height="20" fill="white">
                 <use xlink:href="assets/images/lock.svg#lock"></use>
             </svg>
             Fast Checkout</button>
-        <button type="button" class="btn btn-primary btn-lg rounded-pill fw-bold col ms-3 px-3" >Checkout</button>
+        <button type="button" class="btn btn-primary btn-lg rounded-pill fw-bold col ms-3 px-3">Checkout</button>
     </div>
 </div>

@@ -1,0 +1,49 @@
+<div class="order-bar-height"></div>
+<div class="bg-white order-bar position-absolute left right bottom">
+    <div class="d-flex justify-content-between align-items-center px-5 py-4 order-bar-inner position-relative"
+        data-bs-toggle="collapse" data-bs-target="#collapseExample">
+        <div class="col">
+            <h5 class="mb-0">Your Order</h5>
+            <p class="mb-0 text-muted">2 Items</p>
+        </div>
+        <div class="d-block">
+            <h5 class="mb-0">$57.97</h5>
+        </div>
+    </div>
+    <div class="collapse" id="collapseExample">
+        <div class="px-4 px-lg-5 pb-4">
+            <div class="order-table mb-5">
+                <div class="row g-4 border-bottom py-3 mb-4 fw-bold">
+                    <div class="col col-lg-5">Item</div>
+                    <div class="col">Quantity</div>
+                    <div class="col">Delivery</div>
+                    <div class="col">Repeat</div>
+                </div>
+                <div class="order-listing">
+                    <div include-html="./components/checkout/order-item.html"></div>
+                    <div include-html="./components/checkout/order-item.html"></div>
+                </div>
+            </div>
+            <div class="table-heading">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <td class="px-0">Subtotal</td>
+                            <td class="px-0 text-end">$47.97</td>
+                        </tr>
+                        <tr>
+                            <td class="px-0">Delivery Fee</td>
+                            <td class="px-0 text-end">$10.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="border-top">
+                        <tr>
+                            <td class="px-0">Total</td>
+                            <td class="px-0 text-end">$57.97</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
