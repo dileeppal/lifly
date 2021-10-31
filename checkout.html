@@ -15,8 +15,6 @@
 
     <div include-html="./menu.html"></div>
     
-    <!-- Menu Detail Modal -->
-
     <div class="checkout-modal position-fixed top right bottom shadow-lg z-index-10" >
         <div class="checkout">
             <div class="tabs-block">
@@ -43,61 +41,7 @@
                     <div class="tab-pane fade show active" id="YourOrder" role="tabpanel"
                         aria-labelledby="YourOrder-tab">
                         <!-- Need to add product here -->
-                        <div class="tab-inner px-3 px-lg-5 py-4">
-                            <h2 class="d-flex align-items-center display-6 fw-bold product-search-link my-2">
-                                <a class="me-3" href="#">Meals </a>
-                                <a class="text-light" href="#">Pantry</a>
-                            </h2>
-                            <div class="order-table mb-5">
-                                <div class="row g-4 border-bottom py-3 mb-4 fw-bold">
-                                    <div class="col col-lg-5">Item</div>
-                                    <div class="col">Quantity</div>
-                                    <div class="col">Delivery</div>
-                                    <div class="col">Repeat</div>
-                                </div>
-                                <div class="order-listing">
-                                    <h5 class="text-primary mb-4">Mon 9th October </h5>
-                                    <div include-html="./components/checkout/order-item.html"></div>
-                                    <div include-html="./components/checkout/order-item.html"></div>
-
-                                    <h5 class="text-primary mb-4 mt-5">Wed 11th October</h5>
-                                    <div include-html="./components/checkout/order-item.html"></div>
-                                    <h5 class="text-primary mb-4 mt-5">Fri 13th October</h5>
-                                    <div include-html="./components/checkout/order-item.html"></div>
-                                </div>
-                            </div>
-                            <div include-html="./components/related-products.html"></div>
-
-                            <div>
-                                <table class="table table-borderless">
-                                    
-                                    <tbody>
-                                        <tr>
-                                            <td class="px-0">Subtotal</td>
-                                            <td class="px-0 text-end">$47.97</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="px-0">Delivery Fee</td>
-                                            <td class="px-0 text-end">$10.00</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot class="border-top">
-                                      <tr>
-                                          <td class="px-0">Total</td>
-                                          <td class="px-0 text-end">$57.97</td>
-                                      </tr>
-                                    </tfoot>
-                                  </table>
-                            </div>
-                            <div class="d-flex checkbox-buttons">
-                                <button type="button" class="btn btn-dark btn-lg rounded-pill fw-bold col px-3">
-                                    <svg width="20" height="20" fill="white">
-                                        <use xlink:href="assets/images/lock.svg#lock"></use>
-                                    </svg>
-                                    Fast Checkout</button>
-                                <button type="button" class="btn btn-primary btn-lg rounded-pill fw-bold col ms-3 px-3" >Checkout</button>
-                            </div>
-                        </div>
+                        <div include-html="./components/checkout/cart.html"></div>
                     </div>
                     <div class="tab-pane fade" id="Details" role="tabpanel" aria-labelledby="Details-tab">
                         <!-- Need to add product here -->
@@ -106,18 +50,6 @@
                         <!-- Need to add product here -->
                     </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
-        
-    <div class="checkout-modal modal fade show in" id="productDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <button type="button" class="btn-close position-absolute right top p-3 z-index-10" data-bs-dismiss="modal" aria-label="Close"></button>
-
-                <div class="modal-body overflow-hidden">
-                    <div include-html="./components/product-detail.html"></div>
                 </div>
             </div>
         </div>

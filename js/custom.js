@@ -64,7 +64,14 @@ jQuery(document).ready(function(){
             }
         }
     });
-
-    
 });
+
+function siteNavigate (hideElement, showElement){
+    if(hideElement){
+        document.getElementById(hideElement).style.display = "none";
+    }
+    if(showElement){
+        document.getElementById(showElement).style.display = "block";
+    }
+}
 

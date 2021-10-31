@@ -765,26 +765,6 @@ input[type=number] {
         color: $white !important;
     }
 }
-.form-switch {
-    .form-check-input {
-        border: none;
-        background-color: #DCDCDC;
-        width: 2.875rem;
-        height: 1.5rem;
-        background-size: 1.475rem;
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-        &:focus {
-            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-        }
-        &:checked {
-            background-color: #BFCC80;
-        }
-        @include media-breakpoint-down(lg) {
-            transform: scale(.8);
-        }
-    } 
-}
-
 
 
 .checkout-modal { 
@@ -860,4 +840,8 @@ input[type=number] {
             font-size: .875rem !important;
         }
     }
+}
+.auth-page{
+    max-width: 500px;
+    width: 100%;
 }
