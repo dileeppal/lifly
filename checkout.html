@@ -14,39 +14,40 @@
 <body>
 
     <div include-html="./menu.html"></div>
-    
+
     <!-- Menu Detail Modal -->
 
-    <div class="checkout-modal position-fixed top right bottom shadow-lg z-index-10" >
+    <div class="checkout-modal position-fixed top right bottom shadow-lg z-index-10">
         <div class="checkout">
-            <div class="tabs-block">
-                <div class="">
+            <div class="tabs-block d-flex flex-column">
+                <div class="tab-header">
                     <ul class="nav nav-tabs flex-nowrap text-center" id="myTab" role="tablist">
                         <li class="nav-item me-0 col" role="presentation">
-                            <button class="nav-link fs-5 d-inline-block w-auto py-4 active" id="YourOrder-tab" data-bs-toggle="tab"
-                                data-bs-target="#YourOrder" type="button" role="tab" aria-controls="YourOrder"
-                                aria-selected="true">Your Order</button>
+                            <button class="nav-link fs-5 d-inline-block w-auto py-4 active" id="YourOrder-tab"
+                                data-bs-toggle="tab" data-bs-target="#YourOrder" type="button" role="tab"
+                                aria-controls="YourOrder" aria-selected="true">Your Order</button>
                         </li>
                         <li class="nav-item me-0 col" role="presentation">
-                            <button class="nav-link fs-5 d-inline-block w-auto py-4" id="Details-tab" data-bs-toggle="tab"
-                                data-bs-target="#Details" type="button" role="tab" aria-controls="Details"
-                                aria-selected="false">Details</button>
+                            <button class="nav-link fs-5 d-inline-block w-auto py-4 " id="Details-tab"
+                                data-bs-toggle="tab" data-bs-target="#Details" type="button" role="tab"
+                                aria-controls="Details" aria-selected="false">Details</button>
                         </li>
                         <li class="nav-item me-0 col" role="presentation">
-                            <button class="nav-link fs-5 d-inline-block w-auto py-4" id="Payment-tab" data-bs-toggle="tab" data-bs-target="#Payment"
-                                type="button" role="tab" aria-controls="Payment" aria-selected="false">Payment</button>
+                            <button class="nav-link fs-5 d-inline-block w-auto py-4" id="Payment-tab"
+                                data-bs-toggle="tab" data-bs-target="#Payment" type="button" role="tab"
+                                aria-controls="Payment" aria-selected="false">Payment</button>
                         </li>
                     </ul>
                 </div>
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content col overflow-auto" id="myTabContent">
 
                     <div class="tab-pane fade show active" id="YourOrder" role="tabpanel"
                         aria-labelledby="YourOrder-tab">
                         <!-- Need to add product here -->
                         <div class="tab-inner px-3 px-lg-5 py-4">
                             <h2 class="d-flex align-items-center display-6 fw-bold product-search-link my-2">
-                                <a class="me-3" href="#">Meals </a>
-                                <a class="text-light" href="#">Pantry</a>
+                                <a class="me-3 active" href="#">Meals </a>
+                                <a href="#">Pantry</a>
                             </h2>
                             <div class="order-table mb-5">
                                 <div class="row g-4 border-bottom py-3 mb-4 fw-bold">
@@ -68,9 +69,8 @@
                             </div>
                             <div include-html="./components/related-products.html"></div>
 
-                            <div>
+                            <div class="table-heading">
                                 <table class="table table-borderless">
-                                    
                                     <tbody>
                                         <tr>
                                             <td class="px-0">Subtotal</td>
@@ -82,12 +82,12 @@
                                         </tr>
                                     </tbody>
                                     <tfoot class="border-top">
-                                      <tr>
-                                          <td class="px-0">Total</td>
-                                          <td class="px-0 text-end">$57.97</td>
-                                      </tr>
+                                        <tr>
+                                            <td class="px-0">Total</td>
+                                            <td class="px-0 text-end">$57.97</td>
+                                        </tr>
                                     </tfoot>
-                                  </table>
+                                </table>
                             </div>
                             <div class="d-flex checkbox-buttons">
                                 <button type="button" class="btn btn-dark btn-lg rounded-pill fw-bold col px-3">
@@ -95,26 +95,321 @@
                                         <use xlink:href="assets/images/lock.svg#lock"></use>
                                     </svg>
                                     Fast Checkout</button>
-                                <button type="button" class="btn btn-primary btn-lg rounded-pill fw-bold col ms-3 px-3" >Checkout</button>
+                                <button type="button"
+                                    class="btn btn-primary btn-lg rounded-pill fw-bold col ms-3 px-3">Checkout</button>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="Details" role="tabpanel" aria-labelledby="Details-tab">
+                    <div class="tab-pane fade " id="Details" role="tabpanel" aria-labelledby="Details-tab">
                         <!-- Need to add product here -->
+                        <div class="tab-inner px-3 px-lg-5 py-4">
+                            <h5>Delivery Information</h5>
+                            <hr />
+                            <div class="form-group mb-4">
+                                <label class="form-label fw-bold">Name</label>
+                                <div class="row g-2">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="First Name" />
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Last Name" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <label class="form-label fw-bold">Email</label>
+                                <input type="text" class="form-control" placeholder="Email" />
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="radio" name="Catgories" id="FamilySize">
+                                    <label class="form-check-label" for="FamilySize">
+                                        Subscribe to news and special offers
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group mb-4">
+                                <label for="PhoneNumber" class="form-label fw-bold">Phone</label>
+                                <input type="number" id="PhoneNumber" class="form-control" placeholder="Phone" />
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="radio" name="Catgories1" id="Phone">
+                                    <label class="form-check-label" for="Phone">
+                                        I would like to recieve delivery updates via text
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-4">
+                                <label class="form-label fw-bold">Address</label>
+                                <div class="row g-2">
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Address" />
+                                    </div>
+                                    <div class="col-12">
+                                        <input type="text" class="form-control" placeholder="Suburb" />
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="State" />
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" class="form-control" placeholder="Postcode" />
+                                    </div>
+                                </div>
+                                <div class="form-check mt-2">
+                                    <input class="form-check-input" type="radio" name="Catgories2" id="information">
+                                    <label class="form-check-label" for="information">
+                                        Save my information for next time
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="form-group mb-4">
+                                <label for="DeliveryInstructions" class="form-label fw-bold">Delivery instructions
+                                    (optional)</label>
+                                <textarea id="DeliveryInstructions" class="form-control"
+                                    placeholder="Delivery Instructions"></textarea>
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-lg btn-default py-2 px-0 fw-bold text-muted">Back</button>
+                                    <button class="btn btn-lg py-2 px-5 btn-primary fw-bold rounded-pill">Next</button>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="order-bar-height"></div>
+                        <div class="bg-white shadow-lg order-bar position-absolute left right bottom">
+                            <div class="d-flex justify-content-between align-items-center px-5 py-4 order-bar-inner position-relative"
+                                data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                                <div class="col">
+                                    <h5 class="mb-0">Your Order</h5>
+                                    <p class="mb-0 text-muted">2 Items</p>
+                                </div>
+                                <div class="d-block">
+                                    <h5 class="mb-0">$57.97</h5>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="px-3 px-lg-5 pb-4">
+                                    <div class="order-table mb-5">
+                                        <div class="row g-4 border-bottom py-3 mb-4 fw-bold">
+                                            <div class="col col-lg-5">Item</div>
+                                            <div class="col">Quantity</div>
+                                            <div class="col">Delivery</div>
+                                            <div class="col">Repeat</div>
+                                        </div>
+                                        <div class="order-listing">
+                                            <div include-html="./components/checkout/order-item.html"></div>
+                                            <div include-html="./components/checkout/order-item.html"></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-heading">
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="px-0">Subtotal</td>
+                                                    <td class="px-0 text-end">$47.97</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="px-0">Delivery Fee</td>
+                                                    <td class="px-0 text-end">$10.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="border-top">
+                                                <tr>
+                                                    <td class="px-0">Total</td>
+                                                    <td class="px-0 text-end">$57.97</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="Payment" role="tabpanel" aria-labelledby="Payment-tab">
+                    <div class="tab-pane fade " id="Payment" role="tabpanel" aria-labelledby="Payment-tab">
                         <!-- Need to add product here -->
+                        <div class="tab-inner px-3 px-lg-5 py-4">
+                            <h5>Review Details</h5>
+                            <hr />
+                            <div class="review-details mb-5">
+                                <div class="d-flex justify-content-between">
+                                    <div class="fw-bold">
+                                        Contact
+                                    </div>
+                                    <div class="col px-4">
+                                        <p>
+                                            Sarah Smith <br />
+                                            Name@gmail.com <br />
+                                            0433123543
+                                        </p>
+                                    </div>
+                                    <div class="edit">
+                                        <a class="text-primary fw-bold" href="#">Edit</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <div class="fw-bold">
+                                        Address
+                                    </div>
+                                    <div class="col px-4">
+                                        <p>3 Address Cres, SUBURB NSW 2300, Australia</p>
+                                    </div>
+                                    <div class="edit">
+                                        <a class="text-primary fw-bold" href="#">Edit</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5>Payment</h5>
+                            <hr />
+                            <div class="payment-detail mb-5">
+
+                                <div class="row pay-option">
+                                    <div class="col">
+                                        <input type="radio" class="btn-check" name="payment" id="btncheck1"
+                                            autocomplete="off" checked>
+                                        <label class="" for="btncheck1">
+                                            <img src="assets/images/paypal.png" alt="" />
+                                        </label>
+                                    </div>
+                                    <div class="col">
+                                        <input type="radio" class="btn-check" name="payment" id="btncheck2"
+                                            autocomplete="off">
+                                        <label class="" for="btncheck2">
+                                            <img src="assets/images/afterpay.png" alt="" />
+                                        </label>
+                                    </div>
+                                    <div class="col">
+
+                                        <input type="radio" class="btn-check" name="payment" id="btncheck3"
+                                            autocomplete="off">
+                                        <label class="" for="btncheck3">
+                                            <img src="assets/images/visa.png" alt="" />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-detail mb-5">
+                                <div class="form-group mb-4">
+                                    <label class="form-label fw-bold">Name</label>
+                                    <input type="text" class="form-control" placeholder="Name" />
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label class="form-label fw-bold">Card Number</label>
+                                    <input type="text" class="form-control" placeholder="Name" />
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label class="form-label fw-bold">Expiration Date</label>
+                                    <input type="date" class="form-control" placeholder="Date" />
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label class="form-label fw-bold">CVC</label>
+                                    <input type="text" class="form-control" placeholder="CVC" />
+                                </div>
+                            </div>
+
+                            <h5>Billing Address</h5>
+                            <hr />
+
+                            <div class="mb-5">
+                                <div class="form-check my-2">
+                                    <input class="form-check-input" type="radio" name="Catgories" id="Large" checked>
+                                    <label class="form-check-label" for="Large">
+                                        Same as delivery address
+                                    </label>
+                                </div>
+
+                                <div class="form-check my-2">
+                                    <input class="form-check-input" type="radio" name="Catgories" id="Family Size"
+                                        checked>
+                                    <label class="form-check-label" for="Family Size">
+                                        Use different billing address
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-lg btn-default py-2 px-0 fw-bold text-muted">Back</button>
+                                    <button class="btn btn-lg py-2 px-5 btn-primary fw-bold rounded-pill">Pay
+                                        Now</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="order-bar-height"></div>
+                        <div class="bg-white shadow-lg order-bar position-absolute left right bottom">
+                            <div class="d-flex justify-content-between align-items-center px-5 py-4 order-bar-inner position-relative"
+                                data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                                <div class="col">
+                                    <h5 class="mb-0">Your Order</h5>
+                                    <p class="mb-0 text-muted">2 Items</p>
+                                </div>
+                                <div class="d-block">
+                                    <h5 class="mb-0">$57.97</h5>
+                                </div>
+                            </div>
+                            <div class="collapse" id="collapseExample">
+                                <div class="px-3 px-lg-5 pb-2 pb-lg-4">
+                                    <div class="order-table mb-5">
+                                        <div class="row g-4 border-bottom py-3 mb-4 fw-bold">
+                                            <div class="col col-lg-5">Item</div>
+                                            <div class="col">Quantity</div>
+                                            <div class="col">Delivery</div>
+                                            <div class="col">Repeat</div>
+                                        </div>
+                                        <div class="order-listing">
+                                            <div include-html="./components/checkout/order-item.html"></div>
+                                            <div include-html="./components/checkout/order-item.html"></div>
+                                        </div>
+                                    </div>
+                                    <div class="table-heading">
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td class="px-0">Subtotal</td>
+                                                    <td class="px-0 text-end">$47.97</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="px-0">Delivery Fee</td>
+                                                    <td class="px-0 text-end">$10.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="border-top">
+                                                <tr>
+                                                    <td class="px-0">Total</td>
+                                                    <td class="px-0 text-end">$57.97</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
-        
-    <div class="checkout-modal modal fade show in" id="productDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="checkout-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModal"
+        aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <button type="button" class="btn-close position-absolute right top p-3 z-index-10" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close position-absolute right top p-3 z-index-10"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
 
                 <div class="modal-body overflow-hidden">
                     <div include-html="./components/product-detail.html"></div>
