@@ -8778,7 +8778,7 @@ input[type=number] {
       top: 2.25rem;
       left: 1.5rem; }
 
-.tabs-block {
+.checkout-modal .tabs-block {
   height: 100vh; }
 
 .pay-option input:checked + label {
