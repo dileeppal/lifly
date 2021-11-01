@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Lifely - Sign Up</title>
+</head>
+
+<body>
+
+    <main>
+        <header class="site-header" include-html="./components/header.html"></header>
+        <section class="page-section fixed-page">
+            <div class="container-fluid px-0">
+                <div class="row g-0">
+                    <div class="col-lg-6 d-lg-flex d-none">
+                        <div class="wh-banner position-sticky top">
+                            <img class="img-fluid h-100 w-100 object-cover" src="assets/images/forgot-img.jpg" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="page-spacer">
+                            <div class="auth-page mx-auto">
+                                <div include-html="./components/auth/auth-tab.html"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer" include-html="./components/footer.html"></footer>
+    </main>
+
+    <!-- End -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/loadComponents.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+
+        setTimeout(() => {
+            var someTabTriggerEl = document.querySelector('#signup-tab')
+            var tab = new bootstrap.Tab(someTabTriggerEl)
+            tab.show()
+        }, 100);
+
+    </script>
+</body>
+
+</html>

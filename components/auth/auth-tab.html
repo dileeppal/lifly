@@ -1,0 +1,23 @@
+<div class="tabs-block py-lg-5 py-4">
+    <ul class="nav nav-tabs flex-nowrap" role="authtab">
+        <li class="nav-item col" role="presentation">
+            <button class="nav-link h2 active" id="signin-tab" data-bs-toggle="tab"
+                data-bs-target="#signin" type="button" role="tab" aria-controls="signin"
+                aria-selected="true">Sign In</button>
+        </li>
+        <li class="nav-item col" role="presentation">
+            <button class="nav-link h2" id="signup-tab" data-bs-toggle="tab"
+                data-bs-target="#signup" type="button" role="tab" aria-controls="signup"
+                aria-selected="false">Sign Up</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="signin" role="authtab"
+            aria-labelledby="signin-tab">
+            <div class="py-5" include-html="./components/auth/login.html"></div>
+        </div>
+        <div class="tab-pane fade" id="signup" role="authtab" aria-labelledby="signup-tab">
+            <div class="py-5" include-html="./components/auth/register.html"></div>
+        </div>
+    </div>
+</div>
