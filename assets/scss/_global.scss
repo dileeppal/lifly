@@ -33,6 +33,9 @@
 // h5, .h5 { font-size: 1.875rem; }
 // h6, .h6 { font-size: 1.625rem; }
 
+.text-yellow {
+    color: $yellow,
+  }
 
 @media (min-width: 1366px) {
 	.container {
@@ -51,6 +54,14 @@ body {
 
 img {
     max-width: 100%;
+}
+
+.ratio > * {
+    object-fit: cover;
+}
+
+.top-auto {
+    top: auto !important;
 }
 
 *:focus {
@@ -95,6 +106,12 @@ img {
 // oposite margin
 .ms--1 {
     margin-left: -1rem !important;
+}
+
+@for $i from 1 through 5 {
+    .ls-#{$i}{
+        letter-spacing: #{$i}px !important;
+    }
 }
 
 @for $i from 1 through 10 {
