@@ -7940,6 +7940,9 @@ textarea.form-control-lg {
 
 html {
   font-size: 16px; }
+  @media (max-width: 767.98px) {
+    html {
+      font-size: 14px; } }
 
 body {
   font-family: 'Aeonik';
@@ -8097,6 +8100,10 @@ img {
     top: calc(50% - 100px);
     left: -1rem;
     background-color: #FFF; }
+    @media (max-width: 767.98px) {
+      .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+        width: 2.5rem;
+        height: 2.5rem; } }
     .owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
       font-size: 1.5rem;
       display: block;
@@ -8410,9 +8417,6 @@ input[type=number] {
       font-weight: bold;
       color: #313D3B;
       border-bottom: 2px solid #313D3B; }
-    @media (max-width: 991.98px) {
-      .tabs-block .nav-tabs .nav-link {
-        font-size: 1rem !important; } }
 
 .product-card .product-options {
   position: absolute;
@@ -8431,9 +8435,6 @@ input[type=number] {
 
 .product-card .add-to-cart-row {
   max-width: 25rem; }
-  @media (max-width: 991.98px) {
-    .product-card .add-to-cart-row .btn {
-      font-size: .75rem !important; } }
   .product-card .add-to-cart-row.added-to-cart .added-option {
     visibility: visible;
     opacity: 1; }
@@ -8441,12 +8442,6 @@ input[type=number] {
     display: none !important; }
   .product-card .add-to-cart-row .qty-counter svg {
     stroke: #212529; }
-
-@media (max-width: 991.98px) {
-  .product-card .card-body {
-    font-size: .75rem; }
-    .product-card .card-body .card-title {
-      font-size: 1rem; } }
 
 .product-card .add-to-cart {
   padding: .75rem; }

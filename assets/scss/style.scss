@@ -312,9 +312,6 @@ input[type=number] {
                 color: $secondary;
                 border-bottom: 2px solid $secondary;
             }
-            @include media-breakpoint-down(lg) {
-                font-size: 1rem !important;
-            }
         }
     }
 }
@@ -339,11 +336,7 @@ input[type=number] {
     }
     .add-to-cart-row {
         max-width: 25rem;
-        @include media-breakpoint-down(lg) {
-            .btn {
-                font-size: .75rem !important;            
-            }
-        }
+     
         &.added-to-cart {
             .added-option{
                 visibility: visible;
@@ -359,14 +352,14 @@ input[type=number] {
             }
         }
     }
-    .card-body {
-        @include media-breakpoint-down(lg) {
-            .card-title {
-                font-size: 1rem;
-            }
-            font-size: .75rem;
-        }
-    }
+    // .card-body {
+    //     @include media-breakpoint-down(lg) {
+    //         .card-title {
+    //             font-size: 1rem;
+    //         }
+    //         font-size: .75rem;
+    //     }
+    // }
     .add-to-cart {
         padding: .75rem;
         @include media-breakpoint-down(lg) {
