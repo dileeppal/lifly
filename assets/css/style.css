@@ -3714,7 +3714,7 @@ textarea.form-control-lg {
   .breadcrumb-item + .breadcrumb-item::before {
     float: left;
     padding-right: 0.5rem;
-    color: #6c757d;
+    color: #BFCC80;
     content: var(--bs-breadcrumb-divider, "/") /* rtl: var(--bs-breadcrumb-divider, "/") */; }
 
 .breadcrumb-item.active {
@@ -8204,6 +8204,9 @@ img {
 
 .modal.custom-modal:not(.show).fade .modal-dialog {
   transform: translate(25%, 0); }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  font-weight: normal; }
 
 .nav-toggle {
   padding: 0;
