@@ -78,6 +78,13 @@ img {
 	bottom: 0 !important;
 }
 
+.no-after:after {
+    content: none !important;
+}
+.no-before:before {
+    content: none !important;
+}
+
 .btn-gmail{
     background-color: #5087EE;
     color: $white;
