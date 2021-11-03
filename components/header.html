@@ -1,22 +1,134 @@
-<nav class="navbar navbar-light">
+<nav class="navbar navbar-light navbar-expand-lg">
     <div class="container-fluid">
-        <button class="nav-toggle d-lg-none">
+        <button class="nav-toggle d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
         <a href="index.html" class="navbar-brand py-0">
             <svg width="126" height="39" class="d-block">
-                <use xlink:href="assets/images/logo.svg#logo"/>
+                <use xlink:href="assets/images/logo.svg#logo" />
             </svg>
         </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle no-after" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                    <div class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <div class="container">
+                            <div class="row g-4">
+                                <div class="col-lg">
+                                    <div class="nav-menu">
+                                        <h4 class="mb-3">The Meals</h4>
+                                        <ul>
+                                            <li class="my-1"><a href="#">For you</a></li>
+                                            <li class="my-1"><a href="#">A La Carte</a></li>
+                                            <li class="my-1"><a href="#">Kick Start Program</a></li>
+                                            <li class="my-1"><a href="#">10 Meal Pack</a></li>
+                                            <li class="my-1"><a href="#">Family Pack</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="nav-menu">
+                                        <h4 class="mb-3">The Pantry</h4>
+                                        <ul>
+                                            <li class="my-1"><a href="#">For you</a></li>
+                                            <li class="my-1"><a href="#">Pantry Staples</a></li>
+                                            <li class="my-1"><a href="#">Bakery - This is Us</a></li>
+                                            <li class="my-1"><a href="#">From the Farms</a></li>
+                                            <li class="my-1"><a href="#">Treats</a></li>
+                                            <li class="my-1"><a href="#">Frozen Options</a></li>
+                                            <li class="my-1"><a href="#">Salads / Veges</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="card bg-dark text-white rounded-0 border-0">
+                                        <div class="ratio ratio-1x1">
+                                            <img class="blog-post-img" src="assets/images/image20.jpg" alt="">
+                                        </div>
+                                        <div class="card-img-overlay top-auto p-3">
+                                            <span class="d-block ls-2 fw-bold fs-6">FOR YOU</span>
+                                            <a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="card bg-dark text-white rounded-0 border-0">
+                                        <div class="ratio ratio-1x1">
+                                            <img class="blog-post-img" src="assets/images/image20.jpg" alt="">
+                                        </div>
+                                        <div class="card-img-overlay top-auto p-3">
+                                            <span class="d-block ls-2 fw-bold fs-6">TRENDING</span>
+                                            <a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg">
+                                    <div class="card bg-dark text-white rounded-0 border-0">
+                                        <div class="ratio ratio-1x1">
+                                            <img class="blog-post-img" src="assets/images/image20.jpg" alt="">
+                                        </div>
+                                        <div class="card-img-overlay top-auto p-3">
+                                            <span class="d-block ls-2 fw-bold fs-6">NEW</span>
+                                            <a class="stretched-link" href="#"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="#">Recipes </a></li>
+                <li class="nav-item"><a class="nav-link" href="#">The Edit</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            </ul>
+        </div>
+
         <div class="text-end ms-auto d-flex account-menu">
-            <button type="button" class="btn btn-outline-dark rounded-pill d-none d-lg-block">Sign Up</button>
-            <button onclick="location.href = 'checkout.html'" type="button" class="btn btn-icon p-0 border-0 ms-3">
-                <svg width="30" height="28" class="d-block">
-                    <use xlink:href="assets/images/cart.svg#cart"/>
+            <button type="button" class="btn btn-icon p-0 border-0 search-button me-3" data-bs-toggle="collapse" href="#searchBar">
+                <svg width="22" height="22" class="d-block">
+                    <use xlink:href="assets/images/search-icon.svg#search-icon" />
+                </svg>
+            </button>
+            <button onclick="location.href = 'checkout.html'" type="button" class="btn btn-icon p-0 border-0 me-1">
+                <svg width="32" height="27" class="d-block">
+                    <use xlink:href="assets/images/cart.svg#cart" />
+                </svg>
+            </button>
+            <button type="button" class="btn btn-default fw-bold rounded-pill d-none d-lg-block">Log In</button>
+            <button type="button" class="btn btn-primary fw-bold rounded-pill d-none d-lg-block">Sign Up</button>
+            <div class="dropdown user-dropdown ms-3">
+                <button type="button" class="btn btn-default fw-bold dropdown-toggle px-0 border-0"
+                    data-bs-toggle="dropdown">Sarah </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">My Account</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="header-search bg-white collapse position-absolute left right" id="searchBar">
+    <div class="container">
+        <div class="d-flex py-4 p-lg-5">
+            <div class="input-group mb-0 col">
+                <input type="text" class="form-control rounded-pill z-index-9 bg-light border-0" placeholder="Search Meals" aria-describedby="button-addon1">
+                <button class="btn position-absolute top right px-3 z-index-10 bottom" type="button" id="button-addon1">
+                    <svg width="24" height="24" class="d-block">
+                        <use xlink:href="assets/images/search.svg#search"></use>
+                    </svg>
+                </button>
+            </div>
+            <button class="btn btn-default p-0 ms-3 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#searchBar">
+                <svg width="24" height="24" class="d-block">
+                    <use xlink:href="assets/images/close.svg#close" />
                 </svg>
             </button>
         </div>
     </div>
-</nav>
+</div>
