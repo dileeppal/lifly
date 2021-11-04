@@ -130,6 +130,17 @@ img {
         min-width: #{$i}rem !important;
     }
 }
+
+
+@for $i from 6 through 15 {
+    .mb-#{$i}{
+        margin-bottom: #{$i}rem !important;
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 2.5rem !important;
+        }
+    }
+}
+
 .radio-theme{
    background-color: $light;
    color: $secondary;

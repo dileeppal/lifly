@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <title>Lifely - Article Summary</title>
+</head>
+
+<body>
+
+    <main>
+        <header class="site-header" include-html="./components/header.html"></header>
+
+        <section class="overflow-hidden">
+            <div class="container px-0" style="max-width: 1470px;">
+                <div class="row">
+                    <div class="filter-col d-none d-lg-block">
+                        <div class="page-spacer">
+                            <h3>Sort By</h3>
+                            <div class="accordion bg-none" id="accordionExample">
+                                <div class="accordion-item bg-transparent border-0 border-bottom">
+                                    <h2 class="accordion-header" id="headingCuisine">
+                                        <button
+                                            class="accordion-button shadow-none fs-5 bg-transparent border-0 fw-bold px-0 collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#Cuisine"
+                                            aria-expanded="false" aria-controls="Cuisine">
+                                            Cuisine
+                                        </button>
+                                    </h2>
+                                    <div id="Cuisine" class="accordion-collapse collapse"
+                                        aria-labelledby="headingCuisine" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-none px-0 pt-0">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Regular">
+                                                <label class="form-check-label" for="Regular">
+                                                    Regular
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories" id="Large"
+                                                    checked>
+                                                <label class="form-check-label" for="Large">
+                                                    Large
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Family Size" checked>
+                                                <label class="form-check-label" for="Family Size">
+                                                    Family Size
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="accordion-item bg-transparent border-0 border-bottom">
+                                    <h2 class="accordion-header" id="headingIngredients">
+                                        <button
+                                            class="accordion-button shadow-none fs-5 bg-transparent border-0 fw-bold px-0 collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#Ingredients"
+                                            aria-expanded="false" aria-controls="Ingredients">
+                                            Ingredients
+                                        </button>
+                                    </h2>
+                                    <div id="Ingredients" class="accordion-collapse collapse"
+                                        aria-labelledby="headingIngredients" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-none px-0 pt-0">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Regular">
+                                                <label class="form-check-label" for="Regular">
+                                                    Regular
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories" id="Large"
+                                                    checked>
+                                                <label class="form-check-label" for="Large">
+                                                    Large
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Family Size" checked>
+                                                <label class="form-check-label" for="Family Size">
+                                                    Family Size
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item bg-transparent border-0 border-bottom">
+                                    <h2 class="accordion-header" id="headingPrice">
+                                        <button
+                                            class="accordion-button shadow-none fs-5 bg-transparent border-0 fw-bold px-0 collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#Price"
+                                            aria-expanded="false" aria-controls="Price">
+                                            Price
+                                        </button>
+                                    </h2>
+                                    <div id="Price" class="accordion-collapse collapse" aria-labelledby="headingPrice"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-none px-0 pt-0">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Regular">
+                                                <label class="form-check-label" for="Regular">
+                                                    Regular
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories" id="Large"
+                                                    checked>
+                                                <label class="form-check-label" for="Large">
+                                                    Large
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Family Size" checked>
+                                                <label class="form-check-label" for="Family Size">
+                                                    Family Size
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item bg-transparent border-0 border-bottom">
+                                    <h2 class="accordion-header" id="headingHealth">
+                                        <button
+                                            class="accordion-button shadow-none fs-5 bg-transparent border-0 fw-bold px-0 collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#Health"
+                                            aria-expanded="false" aria-controls="Health">
+                                            Health
+                                        </button>
+                                    </h2>
+                                    <div id="Health" class="accordion-collapse collapse" aria-labelledby="headingHealth"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-none px-0 pt-0">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Regular">
+                                                <label class="form-check-label" for="Regular">
+                                                    Regular
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories" id="Large"
+                                                    checked>
+                                                <label class="form-check-label" for="Large">
+                                                    Large
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Family Size" checked>
+                                                <label class="form-check-label" for="Family Size">
+                                                    Family Size
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item bg-transparent border-0">
+                                    <h2 class="accordion-header" id="headingSize">
+                                        <button
+                                            class="accordion-button shadow-none fs-5 bg-transparent border-0 fw-bold px-0 collapsed"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#Size"
+                                            aria-expanded="true" aria-controls="Size">
+                                            Size
+                                        </button>
+                                    </h2>
+                                    <div id="Size" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingSize" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body bg-none px-0 pt-0">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Regular">
+                                                <label class="form-check-label" for="Regular">
+                                                    Regular
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories" id="Large"
+                                                    checked>
+                                                <label class="form-check-label" for="Large">
+                                                    Large
+                                                </label>
+                                            </div>
+
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="Catgories"
+                                                    id="Family Size" checked>
+                                                <label class="form-check-label" for="Family Size">
+                                                    Family Size
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="page-spacer">
+                            <section class="products py-5 py-lg-0">
+                                <div class="row align-items-end product-search mb-4 mb-lg-5">
+                                    <div class="col-lg-8">
+                                        <h2
+                                            class="mb-4 d-flex align-items-center mb-lg-0 display-5 fw-bold product-search-link">
+                                            Recipes
+                                            <button type="button" class="filter-btn btn p-2 ms-auto d-lg-none"
+                                                data-bs-toggle="modal" data-bs-target="#filterModal">
+                                                <svg width="20" height="20" class="d-block">
+                                                    <use xlink:href="assets/images/filter.svg#filter" />
+                                                </svg>
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div class="col-lg-4 ms-auto">
+                                        <div class="d-flex">
+                                            <div class="input-group mb-0 col">
+                                                <input type="text"
+                                                    class="form-control rounded-pill z-index-9 bg-light border-0"
+                                                    placeholder="Search Meals" aria-describedby="button-addon1">
+                                                <button class="btn position-absolute top right px-3 z-index-10 bottom"
+                                                    type="button" id="button-addon1">
+                                                    <svg width="26" height="27" class="d-block">
+                                                        <use xlink:href="assets/images/search.svg#search" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="artical-posts">
+                                    <div class="featured-image">
+                                        <div class="ratio ratio-16x9">
+                                            <img class="blog-post-img" src="assets/images/image20.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-5">
+                                        <h2 class="display-6 fw-bold py-3 border-bottom mb-4">Recipes</h2>
+                                        <div class="row g-4">
+                                            <div class="col-lg-6">
+                                                <div class="card border-0">
+                                                    <div class="card-body p-0 col-lg-10">
+                                                        <span class="d-block ls-2 text-danger mb-2 fw-bold">TRENDING</span>
+                                                        <h5 class="card-title display-5 fw-bold mb-3">10 Christmas meals your family will love</h5>
+                                                        <p class="card-text text-muted intro">Lifely connects you with food directly from the producers, sidestepping the supermarkets</p>
+                                                        <a href="#" class="small">
+                                                            See full recipe
+                                                            <svg width="7" height="11" class="align-baseline ms-2">
+                                                                <use
+                                                                    xlink:href="assets/images/outline-arrow.svg#outline-arrow" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="row g-3">
+                                                    <div class="col-12">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="col-4">
+                                                                <div class="ratio ratio-1x1">
+                                                                    <img src="assets/images/image20.jpg" class=""
+                                                                        alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 ms-3">
+                                                                <span
+                                                                    class="text-yellow ls-2 d-block mb-2 small fw-bold">NEW</span>
+                                                                <h4>10 Christmas meals your family will love</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="col-4">
+                                                                <div class="ratio ratio-1x1">
+                                                                    <img src="assets/images/image20.jpg" class=""
+                                                                        alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="flex-grow-1 ms-3">
+                                                                <span
+                                                                    class="text-danger ls-2 d-block mb-2 small fw-bold">RECIPES</span>
+                                                                <h4>10 Christmas meals your family will love</h4>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-5">
+                                        <h2 class="display-6 fw-bold py-3 border-bottom mb-4">Recipes for you</h2>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="card bg-dark text-white rounded-0 border-0">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img class="blog-post-img" src="assets/images/image20.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="card-img-overlay top-auto p-4 m-lg-2">
+                                                        <span class=" ls-2 d-block mb-2 small fw-bold">TRENDING</span>
+                                                        <h4 class="card-title">10 Christmas meals your <br />family will
+                                                            love</h4>
+                                                    </div>
+                                                    <a class="stretched-link" href="#"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="card bg-dark text-white rounded-0 border-0">
+                                                    <div class="ratio ratio-1x1">
+                                                        <img class="blog-post-img" src="assets/images/image20.jpg"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="card-img-overlay top-auto p-4 m-lg-2">
+                                                        <span class=" ls-2 d-block mb-2 small fw-bold">TRENDING</span>
+                                                        <h4 class="card-title">10 Christmas meals your <br />family will
+                                                            love</h4>
+                                                    </div>
+                                                    <a class="stretched-link" href="#"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-5">
+                                        <h2 class="display-6 fw-bold py-3 border-bottom mb-4">Trending</h2>
+                                        <div class="row g-4">
+                                            <div class="col-lg-4">
+                                                <div class="card border-0">
+                                                    <div class="ratio ratio-4x3 mb-3">
+                                                        <img src="assets/images/product03.jpg" class="card-img-top"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="card-body p-0">
+                                                        <span class="d-block ls-2 text-yellow mb-2 fw-bold">NEW</span>
+                                                        <h5 class="card-title mb-2">Mexican Lasagne Recipe</h5>
+                                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet,
+                                                            consectet
+                                                            adipiscing elit, sed do eiusmod...</p>
+                                                        <a href="#" class="small">
+                                                            See full recipe
+                                                            <svg width="7" height="11" class="align-baseline ms-2">
+                                                                <use
+                                                                    xlink:href="assets/images/outline-arrow.svg#outline-arrow" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="card border-0">
+                                                    <div class="ratio ratio-4x3 mb-3">
+                                                        <img src="assets/images/product03.jpg" class="card-img-top"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="card-body p-0">
+                                                        <span
+                                                            class="d-block ls-2 text-primary mb-2 fw-bold">VEGAN</span>
+                                                        <h5 class="card-title mb-2">Vegan Noodles Recipe</h5>
+                                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet,
+                                                            consectet
+                                                            adipiscing elit, sed do eiusmod...</p>
+                                                        <a href="#" class="small">
+                                                            See full recipe
+                                                            <svg width="7" height="11" class="align-baseline ms-2">
+                                                                <use
+                                                                    xlink:href="assets/images/outline-arrow.svg#outline-arrow" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="card border-0">
+                                                    <div class="ratio ratio-4x3 mb-3">
+                                                        <img src="assets/images/product03.jpg" class="card-img-top"
+                                                            alt="">
+                                                    </div>
+                                                    <div class="card-body p-0">
+                                                        <span class="d-block ls-2 text-info mb-2 fw-bold">DAIRY-FREE</span>
+                                                        <h5 class="card-title mb-2">Lorem ipsum</h5>
+                                                        <p class="card-text text-muted">Lorem ipsum dolor sit amet,
+                                                            consectet
+                                                            adipiscing elit, sed do eiusmod...</p>
+                                                        <a href="#" class="small">
+                                                            See full recipe
+                                                            <svg width="7" height="11" class="align-baseline ms-2">
+                                                                <use
+                                                                    xlink:href="assets/images/outline-arrow.svg#outline-arrow" />
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer" include-html="./components/footer.html"></footer>
+    </main>
+    <!-- Menu Detail Modal -->
+
+    <div class="modal fade" id="productDetail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close position-absolute right top p-3 z-index-10"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-body overflow-hidden">
+                    <div include-html="./components/product-detail.html"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close position-absolute right top p-3 z-index-10"
+                    data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="modal-body overflow-hidden p-5">
+                    <!-- Sort By -->
+                    <div include-html="./components/sort-by.html"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- End -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/loadComponents.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
