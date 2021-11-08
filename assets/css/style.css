@@ -8148,12 +8148,16 @@ img {
     .mb-15 {
       margin-bottom: 2.5rem !important; } }
 
+.object-cover {
+  object-fit: cover; }
+
 .radio-theme {
   background-color: #F3F3F3;
   color: #313D3B; }
 
 .page-spacer {
-  padding: 4rem 2.5rem; }
+  padding: 4rem 2.5rem;
+  min-height: 70vh; }
   @media (max-width: 991.98px) {
     .page-spacer {
       padding: 1.5rem; } }
@@ -8612,8 +8616,8 @@ input[type=number] {
   padding: 0;
   margin: 0; }
   .leftbar-navigation .nav-menu li {
-    margin-top: .5rem;
-    margin-bottom: .5rem; }
+    margin-top: .75rem;
+    margin-bottom: .75rem; }
     .leftbar-navigation .nav-menu li a {
       font-size: 1.375rem;
       font-weight: bold;

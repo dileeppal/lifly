@@ -141,12 +141,17 @@ img {
     }
 }
 
+.object-cover {
+    object-fit: cover;
+}
+
 .radio-theme{
    background-color: $light;
    color: $secondary;
 }
 .page-spacer {
     padding:4rem 2.5rem;
+    min-height: 70vh;
     @include media-breakpoint-down(lg) {
         padding: 1.5rem;
     }
