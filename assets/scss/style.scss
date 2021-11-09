@@ -419,16 +419,24 @@ input[type=number] {
 }
 
 .product-search-link {
-    a {
+    a, button {
         &:not(.active) {
             color: #CFCFCF; 
         }
 
     }
-    a {
+    a, button {
         @include media-breakpoint-down(lg) {
             font-size: 1.625rem;
         } 
+    }
+}
+
+.order-tabs {
+    .tab-pane {
+        &:not(.active) {
+            display: none;
+        }
     }
 }
 
@@ -1020,4 +1028,63 @@ input[type=number] {
 .checkout-modal-width {
     max-width: 590px;
     width: 100%;
+}
+
+.order-tracking {
+    
+    .order-tracking-item {
+        width: .625rem;
+        height: .625rem;
+        border: 3px solid $primary;
+        border-radius: 100%;
+        margin-right: .75rem;
+        &::before {
+            content: "";
+            width: .75rem;
+            height: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $primary;
+            position: absolute;
+            left: calc(100% + 3px);
+        }
+        
+        &.active {
+            width: 1.25rem;
+            height: 1.25rem; 
+            &:after {
+                content: "";
+                background-color: #BFCC80;
+                width: 1.25rem;
+                height: 1.25rem;
+                border-radius: 100%;
+                position: absolute;
+                left: -3px;
+                top: -3px;
+                transform: scale(.5);
+            }
+            &:before{
+                background-color: #CFCFCF;
+            }
+            ~ .order-tracking-item {
+                border-color: #CFCFCF;
+                &:before{
+                    background-color: #CFCFCF;
+                }
+            }
+        }
+        
+        &:last-child {
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    .order-tracking-item.active ~ .order-tracking-item {
+        border-color: #CFCFCF;
+        &:before{
+            background-color: #CFCFCF;
+        }
+    }
 }

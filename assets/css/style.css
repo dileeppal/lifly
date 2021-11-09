@@ -8604,12 +8604,15 @@ input[type=number] {
       padding-top: 5.5rem;
       padding-bottom: 8rem; } }
 
-.product-search-link a:not(.active) {
+.product-search-link a:not(.active), .product-search-link button:not(.active) {
   color: #CFCFCF; }
 
 @media (max-width: 991.98px) {
-  .product-search-link a {
+  .product-search-link a, .product-search-link button {
     font-size: 1.625rem; } }
+
+.order-tabs .tab-pane:not(.active) {
+  display: none; }
 
 .leftbar-navigation .nav-menu {
   list-style: none;
@@ -9016,3 +9019,45 @@ input[type=number] {
 .checkout-modal-width {
   max-width: 590px;
   width: 100%; }
+
+.order-tracking .order-tracking-item {
+  width: .625rem;
+  height: .625rem;
+  border: 3px solid #BFCC80;
+  border-radius: 100%;
+  margin-right: .75rem; }
+  .order-tracking .order-tracking-item::before {
+    content: "";
+    width: .75rem;
+    height: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #BFCC80;
+    position: absolute;
+    left: calc(100% + 3px); }
+  .order-tracking .order-tracking-item.active {
+    width: 1.25rem;
+    height: 1.25rem; }
+    .order-tracking .order-tracking-item.active:after {
+      content: "";
+      background-color: #BFCC80;
+      width: 1.25rem;
+      height: 1.25rem;
+      border-radius: 100%;
+      position: absolute;
+      left: -3px;
+      top: -3px;
+      transform: scale(0.5); }
+    .order-tracking .order-tracking-item.active:before {
+      background-color: #CFCFCF; }
+    .order-tracking .order-tracking-item.active ~ .order-tracking-item {
+      border-color: #CFCFCF; }
+      .order-tracking .order-tracking-item.active ~ .order-tracking-item:before {
+        background-color: #CFCFCF; }
+  .order-tracking .order-tracking-item:last-child::before {
+    display: none; }
+
+.order-tracking .order-tracking-item.active ~ .order-tracking-item {
+  border-color: #CFCFCF; }
+  .order-tracking .order-tracking-item.active ~ .order-tracking-item:before {
+    background-color: #CFCFCF; }
